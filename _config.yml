@@ -1,0 +1,6 @@
+remote theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+title: KASTLE Lab
+description: KASTLE Lab
+show_downloads: false
