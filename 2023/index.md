@@ -48,7 +48,7 @@ We particularly welcome contributions on topics concerning the development of hi
 
 
 ### Submitting
-Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found in the submission section. Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
+Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found in the [submission section](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
 
 ### Posters
 Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.
