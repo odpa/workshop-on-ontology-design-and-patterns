@@ -70,7 +70,7 @@ Accepted research papers and pattern descriptions will be published online as CE
   * [Pramit Bhattacharyya](https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/), Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)
   * [Eva Blomqvist](https://www.evablomqvist.se/), Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)
   * [Luigi Asprino](http://luigiasprino.it/), Department of Modern Languages, Literatures, and Cultures, University of Bologna, Italy (patterns co-chair)
-  * [Gunjan Singh](https://gunjansingh1.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (Proceedings and Website Chair)
+  * [Gunjan Singh](https://gunjansingh1.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (proceedings and website chair)
 
 ### Steering Committee
 The WOP Steering committee - [the Board of the Association of Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/ODPA) - consists of: 
