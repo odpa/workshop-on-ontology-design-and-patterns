@@ -1,4 +1,4 @@
-# WOP: 2023
+# WOP:2023
 
 ## 14th Workshop on Ontology Design and Patterns - WOP2023
 
