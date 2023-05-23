@@ -66,10 +66,11 @@ Accepted research papers and pattern descriptions will be published online as CE
 ### WOP2023 Chairs
 * Chairs:
   * [Raghava Mutharaju](http://raghavam.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)
-  * TBD (papers co-chair)
-  * TBD (papers co-chair)
-  * TBD (patterns co-chair)
-  * TBD (patterns co-chair)
+  * [Agnieszka Ławrynowicz](http://www.cs.put.poznan.pl/alawrynowicz), Faculty of Computing, Poznan University of Technology, Poland (papers co-chair)
+  * [Pramit Bhattacharyya](https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/), Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)
+  * [Eva Blomqvist](https://www.evablomqvist.se/), Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)
+  * [Luigi Asprino](http://luigiasprino.it/), Department of Modern Languages, Literatures, and Cultures, University of Bologna, Italy (patterns co-chair)
+  * [Gunjan Singh](https://gunjansingh1.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (Proceedings and Website Chair)
 
 ### Steering Committee
 The WOP Steering committee - [the Board of the Association of Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/ODPA) - consists of: 
@@ -90,4 +91,15 @@ The WOP Steering committee - [the Board of the Association of Ontology Design an
 * Jim Salmons, Citizen Scientist at FactMiners.org and The Softalk Apple Project (elected 2018-2020, re-elected 2020-2022)
 
 ### PC members
-TBD
+  - María Poveda, Universidad Politécnica de Madrid, Spain
+  - Adila A. Krisnadhi, University of Indonesia, Indonesia
+  - Christian Kindermann, University of Oslo, Norway
+  - Hande Küçük McGinty, Kansas State University, USA
+  - Shirly Stephen, University of California, Santa Barbara, USA
+  - Nidhi Goyal, IIIT-Delhi, India
+  - Monika Jain, IIIT-Delhi, India
+  - Valentina Anita Carriero, University of Bologna, Italy
+  - Stefano De Giorgis, University of Bologna, Italy
+  - Giorgia Lodi, National Research Council, Italy
+  - Bruno Sartini, Ludwig-Maximilians University, Germany
+  - Aaron Eberhart, Kansas State University, USA
