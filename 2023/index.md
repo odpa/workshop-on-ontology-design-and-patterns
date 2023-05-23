@@ -54,10 +54,10 @@ Submissions should be made via the WOP 2023 EasyChair page. Detailed instruction
 Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.
 
 ### Important Dates
-Papers submissions: July 24, 2023 
-Papers notifications: August 28, 2023 
-Camera-ready submissions: September 4, 2023 
-Workshop will be held on: November 6-7, 2023
+- Papers submissions: July 24, 2023 
+- Papers notifications: August 28, 2023 
+- Camera-ready submissions: September 4, 2023 
+- Workshop will be held on: November 6-7, 2023
 
 ## Proceedings
 Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, if the authors can opt-out and choose not to publish their paper(s).
