@@ -14,22 +14,53 @@ TBD
 TBD
 
 ## Call for Papers and Patterns
-TBD
+We invite the submission of original research results related to the focus areas of the workshop in one of three categories:
+
+1. Research papers (maximum 12 pages CEUR style) presenting mature work and established results.
+2. Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.
+3. Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).
+
 
 ### Topics of Interest
-TBD
+We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs), as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. The main topics of interest are as follows.
+
+1. Use of ontology design patterns for any kind of knowledge engineering, including
+	- Pattern-based ontology design, conceptual modeling or knowledge engineering broadly
+	- Pattern Use in knowledge graphs or linked data settings (including pattern-driven linking or data publishing)
+	- Pattern-based information extraction, ontology learning, and relation to NLP
+	- Pattern use in streaming, ingesting or evolving knowledge
+	- Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment
+	- Pattern-based development of semantic applications
+	- Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)
+2. Methods and tools for developing high-quality ontologies (with or without the help of patterns), including
+	- Ontology engineering by domain experts
+	- Quality attributes or metrics in ontologies and ontology engineering
+	- Quality assurance approaches for ontology engineering
+3. Development or analysis of ontology design patterns, including
+	- Pattern extraction
+	- Analyses of ontology design patterns or their uses
+	- Antipatterns and their relation to ODPs
+4. Development and use of patterns in specific domains, including
+	- Data lakes, business intelligence, or Big Data integration
+	- Geosciences, life sciences, engineering, digital humanities, cultural preservation
+	- IoT, smart homes & cities, smart agriculture
+	- Semantic technology, including social networks, semantic wikis and blogs
+
 
 ### Submitting
-TBD
+Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found in the submission section. Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
 
 ### Posters
-TBD
+Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.
 
 ### Important Dates
-TBD
+Papers submissions: July 24, 2023 
+Papers notifications: August 28, 2023 
+Camera-ready submissions: September 4, 2023 
+Workshop will be held on: November 6-7, 2023
 
 ## Proceedings
-TBD
+Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, if the authors can opt-out and choose not to publish their paper(s).
 
 ## WOP Organization
 ### WOP2023 Chairs
