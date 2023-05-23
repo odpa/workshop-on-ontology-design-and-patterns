@@ -5,7 +5,7 @@
 The workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.
 
 ## Venue and Dates
-TBD
+The fourteenth edition of WOP will be held in conjunction with [ISWC 2023](https://iswc2023.semanticweb.org/) in Athens, Greece.
 
 ### Keynote
 TBD
@@ -48,7 +48,7 @@ We particularly welcome contributions on topics concerning the development of hi
 
 
 ### Submitting
-Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found in the [submission section](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
+Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the [submission page](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
 
 ### Posters
 Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.

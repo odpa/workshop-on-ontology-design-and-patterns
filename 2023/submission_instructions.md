@@ -4,9 +4,9 @@
 
 This page contains instructions for submitting to WOP 2022. There are three categories of papers:
 
-- Research papers (maximum 12 pages CEUR style): Submitted through EasyChair
-- Short papers (maximum 6 pages CEUR style): Submitted through EasyChair
-- Ontology Design Patterns (5-12 pages CEUR style): Submitted through EasyChair and through the ODP community portal, as described below.
+- Research papers (maximum 12 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
+- Short papers (maximum 6 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
+- Ontology Design Patterns (5-12 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023) and through the ODP community portal, as described below.
 
 ## Research and Short Paper Submissions
 
@@ -14,10 +14,10 @@ We invite the submission of original research results related to the focus areas
 
 ### Submission guidelines
 
-- Research papers should be no longer than 12 pages (including references), following the CEUR formatting style. Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.
+- Research papers should be no longer than 12 pages (including references), following the CEUR formatting style(see [link](https://ceurws.wordpress.com/2020/03/31/ceurws-publishes-ceurart-paper-style/)). Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.
 - Short papers should be no longer than 6 pages, following the same template.
 - Submissions should be in English, and non-native speakers are encouraged to seek assistance from native English speakers to ensure the correct language.
-- Submission of the papers should be done through https://easychair.org/conferences/?conf=wop2023.
+- Submission of the papers should be done through [EasyChair](https://easychair.org/conferences/?conf=wop2023).
 
 ### Review process and publication
 
@@ -31,16 +31,15 @@ We invite the submission of new Ontology Design Patterns. Submissions will be co
 
 The following is a list of detailed instructions that authors have to take into account in order to submit their patterns:
 
-- Request an account at the ODP portal, in case you do not have already one. Note that account requests are processed by hand, so do this step with a few days to spare before the submission deadline.
-- Go to the ODP portal pattern submission page.
+- [Request an account at the ODP portal](http://ontologydesignpatterns.org/wiki/Special:RequestAccount), in case you do not have already one. Note that account requests are processed by hand, so do this step with a few days to spare before the submission deadline.
+- Go to the ODP portal [pattern submission page](http://ontologydesignpatterns.org/wiki/Submissions:SubmitAPattern).
 - Submit your pattern by following the instructions, and make sure you enter as much information about your pattern as possible (clarity and completeness of the information will be a review criteria for patterns), i.e. fill out all applicable fields.
-- Write a document briefly describing your pattern (between 5 and 12 pages, depending on the complexity or topic of the pattern, in CEUR style), and submit this pattern description through https://easychair.org/conferences/?conf=wop2022.
+- Write a document briefly describing your pattern (between 5 and 12 pages, depending on the complexity or topic of the pattern, in CEUR style), and submit this pattern description through [EasyChair](https://easychair.org/conferences/?conf=wop2023).
 - If you are experiencing any problems, or have questions about how to submit patterns, please contact the chairs.
 
 ### Review Process
 
 Each submission will be reviewed by at least two members of the PC. Your pattern will be reviewed based on the following set of criteria:
-
 - the practical utility and reusability of the pattern by a community,
 - the relevance of the problem addressed by the pattern,
 - if the pattern encodes some best practice within a community,
