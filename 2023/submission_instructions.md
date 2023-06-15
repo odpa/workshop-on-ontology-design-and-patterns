@@ -2,7 +2,7 @@
 
 ## Submission Instructions for WOP2023
 
-This page contains instructions for submitting to WOP 2022. There are three categories of papers:
+This page contains instructions for submitting to WOP 2023. There are three categories of papers:
 
 - Research papers (maximum 12 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
 - Short papers (maximum 6 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
