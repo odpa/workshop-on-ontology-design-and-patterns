@@ -59,7 +59,7 @@ Accepted research papers and pattern descriptions will be published online as CE
 ## WOP Organization
 ### WOP2023 Chairs
 * Chairs:
-  * [Raghava Mutharaju](http://raghavam.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)
+  * [Raghava Mutharaju](https://iiitd.ac.in/raghavam), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)
   * [Agnieszka Ławrynowicz](http://www.cs.put.poznan.pl/alawrynowicz), Faculty of Computing, Poznan University of Technology, Poland (papers co-chair)
   * [Pramit Bhattacharyya](https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/), Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)
   * [Eva Blomqvist](https://www.evablomqvist.se/), Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)

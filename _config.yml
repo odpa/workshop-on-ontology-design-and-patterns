@@ -4,3 +4,11 @@ plugins:
 title: 14th Workshop on Ontology Design and Patterns (WOP 2023)
 description: Colocated with the 22nd International Semantic Web Conference (ISWC)
 show_downloads: false
+
+sass:
+  style: compressed
+  sass_dir: _sass
+  scss_dir: _sass
+  include:
+    - _sass
+    - custom.css
