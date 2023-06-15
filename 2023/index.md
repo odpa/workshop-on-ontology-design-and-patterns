@@ -1,17 +1,10 @@
-# WOP:2023
-
-## 14th Workshop on Ontology Design and Patterns - WOP2023
+# <center>14th Workshop on Ontology Design and Patterns - WOP2023</center>
+## <center>Colocated with the [22nd International Semantic Web Comference](https://iswc2023.semanticweb.org/)</center>
+### <center>November 6-10, 2023 </center>
+### <center>Athens, Greece</center>
 
 The workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.
 
-## Venue and Dates
-The fourteenth edition of WOP will be held in conjunction with [ISWC 2023](https://iswc2023.semanticweb.org/) in Athens, Greece.
-
-### Keynote
-TBD
-
-### Workshop Schedule
-TBD
 
 ## Call for Papers and Patterns
 We invite the submission of original research results related to the focus areas of the workshop in one of three categories:
@@ -47,7 +40,7 @@ We particularly welcome contributions on topics concerning the development of hi
 	- Semantic technology, including social networks, semantic wikis and blogs
 
 
-### Submitting
+### Submission Instructions
 Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the [submission page](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
 
 ### Posters
@@ -58,6 +51,12 @@ Accepted pattern submissions will be expected to present a poster describing the
 - Papers notifications: August 28, 2023 
 - Camera-ready submissions: September 4, 2023 
 - Workshop will be held on: November 6-7, 2023
+
+### Keynote
+TBD
+
+### Workshop Schedule
+TBD
 
 ## Proceedings
 Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, if the authors can opt-out and choose not to publish their paper(s).
