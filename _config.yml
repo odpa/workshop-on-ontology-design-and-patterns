@@ -1,7 +1,7 @@
 remote theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: <center>14th Workshop on Ontology Design and Patterns (WOP 2023)<br> <span style="font-size: 20px;">Colocated with the 22nd International Semantic Web Conference (ISWC 2023)</span><br><span style="font-size: 20px;"> November 6-10, 2023. Athens, Greece.</span> </center>
+title: <center>14th Workshop on Ontology Design and Patterns (WOP 2023)<br> <span style="font-size: 20px;color:red;">Colocated with the 22nd International Semantic Web Conference (ISWC 2023)</span><br><span style="font-size: 20px;"> November 6-10, 2023. Athens, Greece.</span> </center>
 description: Colocated with the 22nd International Semantic Web Conference (ISWC)
 show_downloads: false
 
