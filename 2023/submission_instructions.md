@@ -1,8 +1,3 @@
-# <center>14th Workshop on Ontology Design and Patterns - WOP2023</center>
-## <center>Colocated with the [22nd International Semantic Web Comference](https://iswc2023.semanticweb.org/)</center>
-### <center>November 6-10, 2023 </center>
-### <center>Athens, Greece</center>
-
 ## Submission Instructions
 
 This page contains instructions for submitting to WOP 2022. There are three categories of papers:
