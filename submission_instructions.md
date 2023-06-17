@@ -1,4 +1,4 @@
-<center><span style="color:black;text-decoration: none;">Colocated with the <a href="https://iswc2023.semanticweb.org/">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;text-decoration: none;"> November 6-10, 2023. Athens, Greece.</span> </center><br>
+<center><span style="color:black;text-decoration: none;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color: #fcb900;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;text-decoration: none;"> November 6-10, 2023. Athens, Greece.</span> </center><br>
 
 
 ## Submission Instructions
