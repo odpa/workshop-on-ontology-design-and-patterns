@@ -92,7 +92,7 @@ The WOP Steering committee - [the Board of the Association of Ontology Design an
   - Christian Kindermann, University of Oslo, Norway
   - Hande Küçük McGinty, Kansas State University, USA
   - Shirly Stephen, University of California, Santa Barbara, USA
-  - Nidhi Goyal, IIIT-Delhi, India
+  - Nidhi Goyal, Mahindra University, India
   - Monika Jain, IIIT-Delhi, India
   - Valentina Anita Carriero, University of Bologna, Italy
   - Stefano De Giorgis, University of Bologna, Italy
