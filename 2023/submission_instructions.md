@@ -1,6 +1,3 @@
-<center><span style="color:black;text-decoration: none;">Colocated with the <a href="https://iswc2023.semanticweb.org/">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;text-decoration: none;"> November 6-10, 2023. Athens, Greece.</span> </center><br>
-<hr>
-
 ## Submission Instructions
 
 This page contains instructions for submitting to WOP 2022. There are three categories of papers:
