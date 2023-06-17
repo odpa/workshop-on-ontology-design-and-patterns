@@ -1,15 +1,7 @@
 remote theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: <center><span style="font-size: 40px;color:#fcb900;text-decoration: none;">**14th Workshop on Ontology Design and Patterns (WOP 2023)**</span></center>
+title: <center><span style="font-size: 40px;color:#fcb900;text-decoration: none;s">**14th Workshop on Ontology Design and Patterns (WOP 2023)**</span></center>
 description: Colocated with the 22nd International Semantic Web Conference (ISWC)
 show_downloads: false
-
-sass:
-  style: compressed
-  sass_dir: _sass
-  scss_dir: _sass
-  include:
-
-    - _sass
-    - custom.css
+extra_css: "/assets/css/custom.css"
