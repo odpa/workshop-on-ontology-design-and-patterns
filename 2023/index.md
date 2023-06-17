@@ -1,6 +1,7 @@
-#<center><span style="color:black;text-decoration: none;">Colocated with the <a href="https://iswc2023.semanticweb.org/">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;text-decoration: none;"> November 6-10, 2023. Athens, Greece.</span> </center>
+<center><span style="color:black;text-decoration: none;">Colocated with the <a href="https://iswc2023.semanticweb.org/">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;text-decoration: none;"> November 6-10, 2023. Athens, Greece.</span> </center>
 
 The workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.
+
 
 
 ## Call for Papers and Patterns
