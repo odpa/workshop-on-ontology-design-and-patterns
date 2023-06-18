@@ -56,7 +56,7 @@ TBD
 TBD
 
 ## Proceedings
-Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, if the authors can opt-out and choose not to publish their paper(s).
+Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, the authors can opt-out and choose not to publish their paper(s).
 
 ## WOP Organization
 ### WOP2023 Chairs
