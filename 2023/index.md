@@ -1,25 +1,9 @@
-
 <html>
 <head>
   <style>
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px;
-      background-color: #ffffff;
+ body {
+      margin: 20px; /* Adjust the value as per your needs */
     }
-    
-    .title {
-      font-size: 34px;
-      font-weight: bold;
-    }
-    
-    body {
-      margin-left: 200px; /* Adjust the value as per your needs */
-      margin-right: 200px; /* Adjust the value as per your needs */
-    }
-    
     .menu {
       position: sticky;
       top: 0;
@@ -40,13 +24,11 @@
       background-color: #ddd;
     }
   </style>
+
+
+<center><span style="color:black;">14th Workshop on Ontology Design and Patterns (WOP 2023)</span><br><span style="color:black;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;"> November 6-10, 2023. Athens, Greece.</span></center><br>
 </head>
 <body>
-  <div class="header">
-    <div class="title"><span style="color:blue;font-size:34px;"><b>14th Workshop on Ontology Design and Patterns (WOP 2023)</b></span><br><span style="color:black;font-size:20px;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;font-size:18px;"> November 6-10, 2023. Athens, Greece.</span><br>
-</div>
-  </div>
-  
   <div class="menu">
     <a href="#organization">Organization</a>
     <a href="#proceedings">Proceedings</a>
