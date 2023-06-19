@@ -3,7 +3,6 @@
 ## Submission Instructions
 
 <p style="text-align: justify;">This page contains instructions for submitting to WOP 2022. There are three categories of papers:</p>
-
 - Research papers (maximum 12 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
 - Short papers (maximum 6 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023)
 - Ontology Design Patterns (5-12 pages CEUR style): Submitted through [EasyChair](https://easychair.org/conferences/?conf=wop2023) and through the ODP community portal, as described below.
@@ -13,8 +12,8 @@
 <p style="text-align: justify;">We invite the submission of original research results related to the focus areas of the workshop. Research papers (maximum 12 pages CEUR style) should present mature work and document established results. Short papers (maximum 6 pages CEUR style) should present proposed research directions, novel ideas, or more general positions or discussions.</p>
 
 ### Submission guidelines
-<p style="text-align: justify;">
-- Research papers should be no longer than 12 pages (including references), following the CEUR formatting style(see [link](https://ceurws.wordpress.com/2020/03/31/ceurws-publishes-ceurart-paper-style/)). Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.</p>
+<div style="text-align: justify;">
+- Research papers should be no longer than 12 pages (including references), following the CEUR formatting style(see [link](https://ceurws.wordpress.com/2020/03/31/ceurws-publishes-ceurart-paper-style/)). Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.</div>
 - Short papers should be no longer than 6 pages, following the same template.
 <p style="text-align: justify;">- Submissions should be in English, and non-native speakers are encouraged to seek assistance from native English speakers to ensure the correct language.</p>
 - Submission of the papers should be done through [EasyChair](https://easychair.org/conferences/?conf=wop2023).

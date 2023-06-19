@@ -5,10 +5,9 @@
 
 ## Call for Papers and Patterns
 <p style="text-align: justify;">We invite the submission of original research results related to the focus areas of the workshop in one of three categories:</p>
-
-<p style="text-align: justify;">1. Research papers (maximum 12 pages CEUR style) presenting mature work and established results.</p>
-<p style="text-align: justify;">2. Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.</p>
-<p style="text-align: justify;">3. Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</p>
+1. Research papers (maximum 12 pages CEUR style) presenting mature work and established results.
+2. Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.
+3. Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).
 
 ### Topics of Interest
 <p style="text-align: justify;">We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs), as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. The main topics of interest are as follows.</p>
@@ -37,7 +36,7 @@
 
 
 ### Submission Instructions
-<p style="text-align: justify;">Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the [submission page](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.</p>
+<div style="text-align: justify;">Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the [submission page](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.</div>
 
 ### Posters
 <p style="text-align: justify;">Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.</p>
