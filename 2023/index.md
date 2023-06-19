@@ -34,103 +34,122 @@
     <a href="#dates">Dates</a>
     <a href="#cfp">Calls</a>
   </div>
-<p style="text-align: justify;">The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.</p>
+<br><p style="text-align: justify;">The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.</p>
 
 <h2 id="cfp">Call for Papers and Patterns</h2>
 <p style="text-align: justify;">We invite the submission of original research results related to the focus areas of the workshop in one of three categories:</p>
-1. Research papers (maximum 12 pages CEUR style) presenting mature work and established results.
-2. Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.
-3. Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).
+<ol>
+<li>Research papers (maximum 12 pages CEUR style) presenting mature work and established results.</li>
+<li>Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.</li>
+<li>Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</li>
+</ol>
 
-### Topics of Interest
+<h3 id="cfp">Topics of Interest</h3>
 <p style="text-align: justify;">We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs), as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. The main topics of interest are as follows.</p>
-
-1. Use of ontology design patterns for any kind of knowledge engineering, including
-	- Pattern-based ontology design, conceptual modeling or knowledge engineering broadly
-	- Pattern Use in knowledge graphs or linked data settings (including pattern-driven linking or data publishing)
-	- Pattern-based information extraction, ontology learning, and relation to NLP
-	- Pattern use in streaming, ingesting or evolving knowledge
-	- Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment
-	- Pattern-based development of semantic applications
-	- Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)
-2. Methods and tools for developing high-quality ontologies (with or without the help of patterns), including
-	- Ontology engineering by domain experts
-	- Quality attributes or metrics in ontologies and ontology engineering
-	- Quality assurance approaches for ontology engineering
-3. Development or analysis of ontology design patterns, including
-	- Pattern extraction
-	- Analyses of ontology design patterns or their uses
-	- Antipatterns and their relation to ODPs
-4. Development and use of patterns in specific domains, including
-	- Data lakes, business intelligence, or Big Data integration
-	- Geosciences, life sciences, engineering, digital humanities, cultural preservation
-	- IoT, smart homes & cities, smart agriculture
-	- Semantic technology, including social networks, semantic wikis and blogs
-
+<ol>
+<li>Use of ontology design patterns for any kind of knowledge engineering, including
+<ul>
+	<li> Pattern-based ontology design, conceptual modeling or knowledge engineering broadly</li>
+	<li> Pattern Use in knowledge graphs or linked data settings (including pattern-driven linking or data publishing)</li>
+	<li> Pattern-based information extraction, ontology learning, and relation to NLP</li>
+	<li> Pattern use in streaming, ingesting or evolving knowledge</li>
+	<li> Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment</li>
+	<li> Pattern-based development of semantic applications</li>
+	<li> Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)</li>
+</ul></li>
+<li>Methods and tools for developing high-quality ontologies (with or without the help of patterns), including
+<ul>
+	<li> Ontology engineering by domain experts</li>
+	<li> Quality attributes or metrics in ontologies and ontology engineering</li>
+	<li> Quality assurance approaches for ontology engineering</li>
+</ul></li>
+<li>Development or analysis of ontology design patterns, including
+<ul>
+	<li> Pattern extraction</li>
+	<li> Analyses of ontology design patterns or their uses</li>
+	<li> Antipatterns and their relation to ODPs</li>
+</ul></li>
+<li>Development and use of patterns in specific domains, including
+<ul>
+	<li> Data lakes, business intelligence, or Big Data integration</li>
+	<li> Geosciences, life sciences, engineering, digital humanities, cultural preservation</li>
+	<li> IoT, smart homes & cities, smart agriculture</li>
+	<li> Semantic technology, including social networks, semantic wikis and blogs</li>
+</ul></li>
+</ol>
 <h2 id="submission">Submission Instructions</h2>
-Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the [submission page](submission_instructions.md). Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
+Submissions should be made via the WOP 2023 EasyChair page. Detailed instructions can be found at the <a href="submission_instructions.md" target="_blank">submission page</a>. Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
 
-### Posters
+<h3>Posters</h3>
 <p style="text-align: justify;">Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.</p>
 
 <h2 id="dates">Important Dates</h2>
-- Papers submissions: July 24, 2023 
-- Papers notifications: August 28, 2023 
-- Camera-ready submissions: September 4, 2023 
-- Workshop will be held on: November 6-7, 2023
+<ul>
+<li> Papers submissions: July 24, 2023</li>
+<li> Papers notifications: August 28, 2023</li>
+<li> Camera-ready submissions: September 4, 2023</li>
+<li> Workshop will be held on: November 6-7, 2023</li>
+</ul>
 
 <h2 id="program">Program</h2>
 
-### Keynote
+<h3>Keynote</h3>
 TBD
 
-### Workshop Schedule
+<h3>Workshop Schedule</h3>
 TBD
 
 <h2 id="proceedings">Proceedings</h2>
 <p style="text-align: justify;">Accepted research papers and pattern descriptions will be published online as CEUR-Workshop Proceedings. However, the authors can opt-out and choose not to publish their paper(s).</p>
 
 <h2 id="organization">WOP Organization</h2>
-### WOP2023 Chairs
-* Chairs:
-  * [Raghava Mutharaju](https://iiitd.ac.in/raghavam), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)
-  * [Agnieszka Ławrynowicz](http://www.cs.put.poznan.pl/alawrynowicz), Faculty of Computing, Poznan University of Technology, Poland (papers co-chair)
-  * [Pramit Bhattacharyya](https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/), Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)
-  * [Eva Blomqvist](https://www.evablomqvist.se/), Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)
-  * [Luigi Asprino](http://luigiasprino.it/), Department of Modern Languages, Literatures, and Cultures, University of Bologna, Italy (patterns co-chair)
-  * [Gunjan Singh](https://gunjansingh1.github.io/), Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (proceedings and website chair)
-
-### Steering Committee
+<h3>WOP Chairs</h3>
+<ul>
+  <li><a href="(https://iiitd.ac.in/raghavam" target="_blank">Raghava Mutharaju</a>, Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)</li>
+ <li> <a href="http://www.cs.put.poznan.pl/alawrynowicz" target="_blank">Agnieszka Ławrynowicz</a>, Faculty of Computing, Poznan University of Technology, Poland (papers co-chair)</li>
+  <li> <a href="https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/" target="_blank">Pramit Bhattacharyya</a>, Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)</li>
+  <li> <a href="https://www.evablomqvist.se/" target="_blank">Eva Blomqvist</a>, Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)</li>
+  <li> <a href="http://luigiasprino.it/" target="_blank">Luigi Asprino</a>, Department of Modern Languages, Literatures, and Cultures, University of Bologna, Italy (patterns co-chair)</li>
+  <li> <a href="https://gunjansingh1.github.io/" target="_blank">Gunjan Singh</a>, Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (proceedings and website chair)</li>
+</ul>
+<h3>Steering Committee</h3>
 The WOP Steering committee - [the Board of the Association of Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/ODPA) - consists of: 
-#### Managing Committee
-* [Andrea Giovanni Nuzzolese](https://www.istc.cnr.it/it/people/andrea-giovanni-nuzzolese), ISTC-CNR (chair - elected 2020-2022)
-* [Karl Hammar](https://karlhammar.com/), Microsoft (vice chair - elected 2020-2022)
-* [Cogan Shimizu](https://coganshimizu.com/), Wright State University (vice chair - elected 2020-2022) 
 
-#### Other Board Members
-* Luigi Asprino, University of Bologna (elected 2020-2022)
-* Gary Berg-Cross, Ontolog Forum (elected 2020-2022)
-* Eva Blomqvist, Linköping University (elected 2016-2018, chair - elected 2017-2020, elected 2020-2022)
-* Aldo Gangemi, ISTC-CNR (elected 2016-2018, re-elected 2018-2020, re-elected 2020-2022)
-* Fiorela Ciroku, University of Bologna (elected 2020-2022)
-* Pascal Hitzler, Kansas State University (vice chair - elected 2017-2020, elected 2020-2022)
-* Adila Krisnadhi, Universitas Indonesia (elected 2017-2020, re-elected 2020-2022)
-* Valentina Presutti, University of Bologna (vice chair - elected 2016-2018, vice chair - re-elected 2018-2020, elected 2020-2022)
-* Jim Salmons, Citizen Scientist at FactMiners.org and The Softalk Apple Project (elected 2018-2020, re-elected 2020-2022)
+<h3>Managing Committee</h3>
+<ul>
+<li><a href="https://www.istc.cnr.it/it/people/andrea-giovanni-nuzzolese" target="_blank">Andrea Giovanni Nuzzolese</a>, ISTC-CNR (chair - elected 2020-2022)</li>
+<li> <a href="https://karlhammar.com/">Karl Hammar</a>, Microsoft (vice chair - elected 2020-2022)</li>
+<li><a href="https://coganshimizu.com/" target="_blank">Cogan Shimizu</a>, Wright State University (vice chair - elected 2020-2022)</li>
+</ul>
 
-### PC members
-  - María Poveda, Universidad Politécnica de Madrid, Spain
-  - Adila A. Krisnadhi, University of Indonesia, Indonesia
-  - Christian Kindermann, University of Oslo, Norway
-  - Hande Küçük McGinty, Kansas State University, USA
-  - Shirly Stephen, University of California, Santa Barbara, USA
-  - Nidhi Goyal, Mahindra University, India
-  - Monika Jain, IIIT-Delhi, India
-  - Valentina Anita Carriero, University of Bologna, Italy
-  - Stefano De Giorgis, University of Bologna, Italy
-  - Giorgia Lodi, National Research Council, Italy
-  - Bruno Sartini, Ludwig-Maximilians University, Germany
-  - Aaron Eberhart, Kansas State University, USA
+<h4>Other Board Members</h4>
+<ul>
+<li> Luigi Asprino, University of Bologna (elected 2020-2022)<br>
+<li> Gary Berg-Cross, Ontolog Forum (elected 2020-2022)<br>
+<li> Eva Blomqvist, Linköping University (elected 2016-2018, chair - elected 2017-2020, elected 2020-2022)<br>
+<li> Aldo Gangemi, ISTC-CNR (elected 2016-2018, re-elected 2018-2020, re-elected 2020-2022)<br>
+<li> Fiorela Ciroku, University of Bologna (elected 2020-2022)<br>
+<li> Pascal Hitzler, Kansas State University (vice chair - elected 2017-2020, elected 2020-2022)<br>
+<li> Adila Krisnadhi, Universitas Indonesia (elected 2017-2020, re-elected 2020-2022)<br>
+<li> Valentina Presutti, University of Bologna (vice chair - elected 2016-2018, vice chair - re-elected 2018-2020, elected 2020-2022)<br>
+<li> Jim Salmons, Citizen Scientist at FactMiners.org and The Softalk Apple Project (elected 2018-2020, re-elected 2020-2022)<br>
+</ul>
+
+<h3>PC members</h3>
+<ul>
+  <li> María Poveda, Universidad Politécnica de Madrid, Spain </li>
+  <li>Adila A. Krisnadhi, University of Indonesia, Indonesia </li>
+  <li> Christian Kindermann, University of Oslo, Norway</li>
+  <li>Hande Küçük McGinty, Kansas State University, USA</li>
+  <li> Shirly Stephen, University of California, Santa Barbara, USA</li>
+  <li> Nidhi Goyal, Mahindra University, India</li>
+  <li> Monika Jain, IIIT-Delhi, India</li>
+  <li> Valentina Anita Carriero, University of Bologna, Italy</li>
+  <li> Stefano De Giorgis, University of Bologna, Italy</li>
+  <li> Giorgia Lodi, National Research Council, Italy</li>
+  <li>Bruno Sartini, Ludwig-Maximilians University, Germany</li>
+  <li> Aaron Eberhart, Kansas State University, USA</li>
+</ul>
 
 </body>
 </html>
