@@ -1,30 +1,53 @@
-
 <html>
 <head>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+	  margin-left: 300px; /* Adjust the value as per your needs */
+      margin-right: 300px; /* Adjust the value as per your needs */
+      font-family: Arial, sans-serif;
+    }
+    
     .header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 30px;
       background-color: #ffffff;
     }
     
     .title {
+      text-align: center;
       font-size: 34px;
       font-weight: bold;
+      color: blue;
+      margin-bottom: 10px;
     }
     
-    body {
-      margin-left: 200px; /* Adjust the value as per your needs */
-      margin-right: 200px; /* Adjust the value as per your needs */
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      margin-bottom: 10px;
+    }
+    
+    .location {
+      text-align: center;
+      font-size: 18px;
+      color: black;
+      margin-bottom: 20px;
     }
     
     .menu {
-      position: sticky;
-      top: 0;
       background-color: #f1f1f1;
       overflow: hidden;
+      position: sticky;
+      top: 0;
     }
 
     .menu a {
@@ -39,11 +62,15 @@
     .menu a:hover {
       background-color: #ddd;
     }
+    
+    .content {
+      margin: 40px;
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <div class="title"><span style="color:blue;font-size:34px;"><b>14th Workshop on Ontology Design and Patterns (WOP 2023)</b></span><br><span style="color:black;font-size:20px;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;font-size:18px;"> November 6-10, 2023. Athens, Greece.</span><br>
+    <div class="title"><span style="color:blue;font-size:34px;"><b>14th Workshop on Ontology Design and Patterns (WOP 2023)</b></span><br><span style="color:black;font-size:20px;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;text-decoration: none;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;font-size:18px;"> November 6-10, 2023. Athens, Greece.</span><br>
 </div>
   </div>
   
@@ -54,7 +81,10 @@
     <a href="#submission">Submission</a>
     <a href="#dates">Dates</a>
     <a href="#cfp">Calls</a>
+	    <a href="#home">Home</a>
   </div>
+
+
 <br><p style="text-align: justify;">The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.</p>
 
 <h2 id="cfp">Call for Papers and Patterns</h2>
