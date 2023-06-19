@@ -1,21 +1,47 @@
-<center><span style="color:black;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;"> November 6-10, 2023. Athens, Greece.</span></center><hr style="border-color: blue;"><br>
+<html>
+<head>
+  <style>
+    .menu {
+      position: sticky;
+      top: 0;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
 
-## 
+    .menu a {
+      float: right;
+      color: black;
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+    }
+  </style>
+<center><span style="color:black;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;"> November 6-10, 2023. Athens, Greece.</span></center><br>
+</head>
+<body>
+<br>
 <h2>Submission Instructions</h2>
 <p style="text-align: justify;">This page contains instructions for submitting to WOP 2022. There are three categories of papers:</p>
-- Research papers (maximum 12 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a>
-- Short papers (maximum 6 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a>
-- Ontology Design Patterns (5-12 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a> and through the ODP community portal, as described below.
+<ul>
+<li> Research papers (maximum 12 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a></li>
+<li> Short papers (maximum 6 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a></li>
+<li> Ontology Design Patterns (5-12 pages CEUR style): Submitted through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a> and through the ODP community portal, as described below.</li>
+</ul>
 
 <h3>Research and Short Paper Submissions</h3>
 
 <p style="text-align: justify;">We invite the submission of original research results related to the focus areas of the workshop. Research papers (maximum 12 pages CEUR style) should present mature work and document established results. Short papers (maximum 6 pages CEUR style) should present proposed research directions, novel ideas, or more general positions or discussions.</p>
 
 <h3>Submission guidelines</h3>
-- Research papers should be no longer than 12 pages (including references), following the CEUR formatting style(see <a href="https://ceurws.wordpress.com/2020/03/31/ceurws-publishes-ceurart-paper-style/" target="_blank">link</a>). Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.
-- Short papers should be no longer than 6 pages, following the same template.
-- Submissions should be in English, and non-native speakers are encouraged to seek assistance from native English speakers to ensure the correct language.
-- Submission of the papers should be done through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a>.
+<li> Research papers should be no longer than 12 pages (including references), following the CEUR formatting style(see <a href="https://ceurws.wordpress.com/2020/03/31/ceurws-publishes-ceurart-paper-style/" target="_blank">link</a>). Note that papers not adhering to the style guidelines or the maximum page limit will be rejected without review.</li>
+<li> Short papers should be no longer than 6 pages, following the same template.</li>
+<li> Submissions should be in English, and non-native speakers are encouraged to seek assistance from native English speakers to ensure the correct language.</li>
+<li> Submission of the papers should be done through <a href="https://easychair.org/conferences/?conf=wop2023" target="_blank">EasyChair</a>.</li>
 
 <h3>Review process and publication</h3>
 
@@ -45,3 +71,6 @@ Each submission will be reviewed by at least two members of the PC. Your pattern
 <li> and the completeness and clarity of the pattern submission, i.e., if all fields in the community portal have been filled and all aspects properly explained.</li>
 </ul>
 <p style="text-align: justify;">Accepted patterns have to be improved based on the review comments, i.e., an update of the patterns in the ODP portal is mandatory. Accepted patterns will be presented at the workshop as posters in the pattern session. </p>
+
+</body>
+</html>
