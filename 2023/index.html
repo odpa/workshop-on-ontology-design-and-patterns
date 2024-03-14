@@ -66,7 +66,40 @@
     .content {
       margin: 40px;
     }
-	
+	   .slideshow {
+      display: flex;
+      overflow: hidden;
+      max-width: 600px; /* Adjust max-width as needed */
+      margin: 0 auto;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+    }
+    .slide:target {
+      display: block;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    /* CSS for navigation links */
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav a:hover {
+      background-color: #555;
+    }
 	
   </style>
 </head>
@@ -179,13 +212,8 @@ Submissions should be made via the WOP 2023 EasyChair page. Detailed instruction
 </div><hr style="color: blue;"><b>15:20 - 16:00 (Break)</b></div><hr style="color: blue;">
 </div><hr style="color: blue;"><b> 16:00 - 17:20 (4th Paper Session)</b></div><hr style="color: blue;">
 <ul>
-<<<<<<< HEAD
   <li> <b>16:00 - 16:20</b> Frances Gillis-Webber. <em>Pattern Comparison of is-a Concepts for Ontology Localisation</em><a href="slides/frances_9" target="_blank"> (slides)</a></li>
   <li> <b>16:20 - 16:40</b> Maxime Lefrançois. <em>SAREF4SYST: a SAREF Reference Ontology Pattern for Representing Systems and their Interconnections</em><a href="presentations/Lefrancois-SAREF4SYST.pdf" target="_blank"> (slides)</a></li>
-=======
-  <li> <b>16:00 - 16:20</b> Frances Gillis-Webber. <em>Pattern Comparison of is-a Concepts for Ontology Localisation</em></li>
-  <li> <b>16:20 - 16:40</b> Maxime Lefrançois. <em>SAREF4SYST: a SAREF Reference Ontology Pattern for Representing Systems and their Interconnections</em> (<a href="presentations/Lefrancois-SAREF4SYST.pdf">slides</a>)</li>
->>>>>>> f29604ba8b16d029895938568ac44491037754d4
   <li> <b>16:40 - 17:20</b> Breakout group discussions</li>
   </ul></div><hr style="color: blue;">
 </ul>
@@ -246,6 +274,28 @@ The WOP Steering committee - [the Board of the Association of Ontology Design an
   <li>Rushrukh Rayan, Kansas State University, USA</li>
   <li>Cogan Shimizu, Wright State University, USA</li>
 </ul>
+</div>
+<h2 id="pictures">Pictures</h2>
+</div><hr style="color: blue;">
+<div class="slideshow">
+  <!-- Individual slides -->
+  <div class="slide" id="slide1">
+    <img src="image1.jpg" alt="Slide 1">
+  </div>
+  <div class="slide" id="slide2">
+    <img src="image2.jpg" alt="Slide 2">
+  </div>
+  <div class="slide" id="slide3">
+    <img src="image3.jpg" alt="Slide 3">
+  </div>
+</div>
 
+<!-- Navigation links -->
+<div class="nav">
+  <a href="#slide1">1</a>
+  <a href="#slide2">2</a>
+  <a href="#slide3">3</a>
+</div>
+</div>
 </body>
 </html>
