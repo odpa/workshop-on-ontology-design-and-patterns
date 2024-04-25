@@ -1,0 +1,287 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+	  margin-left: 10vw; /* Adjust the value as per your needs */
+      margin-right: 10vw; /* Adjust the value as per your needs */
+      font-family: Arial, sans-serif;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      background-color: #ffffff;
+    }
+    
+    .title {
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      color: blue;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      margin-bottom: 10px;
+    }
+    
+    .location {
+      text-align: center;
+      font-size: 18px;
+      color: black;
+      margin-bottom: 20px;
+    }
+    
+    .menu {
+      background-color: #f1f1f1;
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+    }
+
+    .menu a {
+      float: right;
+      color: black;
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+    }
+    
+    .content {
+      margin: 40px;
+    }
+	   .slideshow {
+      display: flex;
+      overflow: hidden;
+      max-width: 600px; /* Adjust max-width as needed */
+      margin: 0 auto;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+    }
+    .slide:target {
+      display: block;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    /* CSS for navigation links */
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav a:hover {
+      background-color: #555;
+    }
+	
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title"><span style="color:blue;font-size:34px;"><b>14th Workshop on Ontology Design and Patterns (WOP 2023)</b></span><br><span style="color:black;font-size:20px;">Colocated with the <a href="https://iswc2023.semanticweb.org/" style="color:black;text-decoration: none;">22nd International Semantic Web Conference (ISWC 2023)</a></span><br><span style="color:black;font-size:18px;"> November 6-10, 2023. Athens, Greece.</span><br>
+</div>
+  </div>
+  
+  <div class="menu">
+  <a href="#pictures">Pictures</a>
+    <a href="#organization">Organization</a>
+    <a href="#proceedings">Proceedings</a>
+    <a href="#program">Program</a>
+    <a href="#submission">Submission</a>
+    <a href="#dates">Dates</a>
+    <a href="#cfp">Calls</a>
+	    <a href="index.html">Home</a>
+  </div>
+<br>
+<h2>About</h2>
+</div><hr style="color: blue;">
+<div style="text-align: justify;">The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of Semantic Web such as knowledge graphs can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of a direct link to requirements, reuse, guidance, and better communication. The workshop’s aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions.</div>
+
+<h2 id="cfp">Call for Papers and Patterns</h2>
+</div><hr style="color: blue;">
+<p style="text-align: justify;">We invite the submission of original research results related to the focus areas of the workshop in one of three categories:</p>
+<ol>
+<li>Research papers (maximum 12 pages CEUR style) presenting mature work and established results.</li>
+<li>Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.</li>
+<li>Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</li>
+</ol>
+
+<h3 id="cfp">Topics of Interest</h3>
+</div><hr style="color: blue;">
+<p style="text-align: justify;">We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs), as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. The main topics of interest are as follows.</p>
+<ol>
+<li>Use of ontology design patterns for any kind of knowledge engineering, including
+<ul>
+	<li> Pattern-based ontology design, conceptual modeling or knowledge engineering broadly</li>
+	<li> Pattern Use in knowledge graphs or linked data settings (including pattern-driven linking or data publishing)</li>
+	<li> Pattern-based information extraction, ontology learning, and relation to NLP</li>
+	<li> Pattern use in streaming, ingesting or evolving knowledge</li>
+	<li> Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment</li>
+	<li> Pattern-based development of semantic applications</li>
+	<li> Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)</li>
+</ul></li>
+<li>Methods and tools for developing high-quality ontologies (with or without the help of patterns), including
+<ul>
+	<li> Ontology engineering by domain experts</li>
+	<li> Quality attributes or metrics in ontologies and ontology engineering</li>
+	<li> Quality assurance approaches for ontology engineering</li>
+</ul></li>
+<li>Development or analysis of ontology design patterns, including
+<ul>
+	<li> Pattern extraction</li>
+	<li> Analyses of ontology design patterns or their uses</li>
+	<li> Antipatterns and their relation to ODPs</li>
+</ul></li>
+<li>Development and use of patterns in specific domains, including
+<ul>
+	<li> Data lakes, business intelligence, or Big Data integration</li>
+	<li> Geosciences, life sciences, engineering, digital humanities, cultural preservation</li>
+	<li> IoT, smart homes & cities, smart agriculture</li>
+	<li> Semantic technology, including social networks, semantic wikis and blogs</li>
+</ul></li>
+</ol>
+<h2 id="submission">Submission Instructions</h2>
+</div><hr style="color: blue;">
+Submissions should be made via the WOP 2024 EasyChair page. Detailed instructions can be found at the <a href="submission_instructions.html" target="_blank">submission page</a>. Note that design pattern submissions also need to be submitted to the ontologydesignpatterns.org community portal, as described on that page.
+
+<h3>Posters</h3>
+<p style="text-align: justify;">Accepted pattern submissions will be expected to present a poster describing the pattern at the workshop poster session. Accepted research or short papers may also be presented in this manner if the authors would like to, but posters are not mandatory for such submissions.</p>
+
+<h2 id="dates">Important Dates</h2>
+</div><hr style="color: blue;">
+<ul>
+<li> Papers submissions: <s>July 24, 2023</s> July 31, 2023</li>
+<li> Papers notifications: <s>August 28, 2023</s> August 31, 2023</li>
+<li> Camera-ready submissions: <s>September 4, 2023</s> September 8, 2023</li>
+<li> Workshop will be held on: November 6, 2023</li>
+</ul>
+
+<h2 id="program">Program</h2>
+</div><hr style="color: blue;">
+TBD.
+
+<h2 id="proceedings">Proceedings</h2>
+</div><hr style="color: blue;">
+<p style="text-align: justify;">Proceedings will be published via CEUR.</p>
+
+<h2 id="organization">WOP Organization</h2>
+</div><hr style="color: blue;">
+<h3>WOP Chairs</h3>
+<ul>
+  <li><a href="https://iiitd.ac.in/raghavam" target="_blank">Raghava Mutharaju</a>, Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (general chair)</li>
+ <li> <a href="http://www.cs.put.poznan.pl/alawrynowicz" target="_blank">Agnieszka Ławrynowicz</a>, Faculty of Computing, Poznan University of Technology, Poland (papers co-chair)</li>
+  <li> <a href="https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/" target="_blank">Pramit Bhattacharyya</a>, Department of Computer Science and Engineering, IIT Kanpur, India. (papers co-chair)</li>
+  <li> <a href="https://www.evablomqvist.se/" target="_blank">Eva Blomqvist</a>, Department of Computer and Information Science, Linköping University, Sweden (patterns co-chair)</li>
+  <li> <a href="http://luigiasprino.it/" target="_blank">Luigi Asprino</a>, Department of Modern Languages, Literatures, and Cultures, University of Bologna, Italy (patterns co-chair)</li>
+  <li> <a href="https://gunjansingh1.github.io/" target="_blank">Gunjan Singh</a>, Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi), India (proceedings and website chair)</li>
+</ul>
+<h3>Steering Committee</h3>
+The WOP Steering committee - [the Board of the Association of Ontology Design and Patterns](http://ontologydesignpatterns.org/wiki/ODPA) - consists of: 
+
+<h3>Managing Committee</h3>
+<ul>
+<li><a href="https://www.istc.cnr.it/it/people/andrea-giovanni-nuzzolese" target="_blank">Andrea Giovanni Nuzzolese</a>, ISTC-CNR (chair - elected 2020-2022)</li>
+<li> <a href="https://karlhammar.com/">Karl Hammar</a>, Microsoft (vice chair - elected 2020-2022)</li>
+<li><a href="https://coganshimizu.com/" target="_blank">Cogan Shimizu</a>, Wright State University (vice chair - elected 2020-2022)</li>
+</ul>
+
+<h4>Other Board Members</h4>
+<ul>
+<li> Luigi Asprino, University of Bologna (elected 2020-2022)<br>
+<li> Gary Berg-Cross, Ontolog Forum (elected 2020-2022)<br>
+<li> Eva Blomqvist, Linköping University (elected 2016-2018, chair - elected 2017-2020, elected 2020-2022)<br>
+<li> Aldo Gangemi, ISTC-CNR (elected 2016-2018, re-elected 2018-2020, re-elected 2020-2022)<br>
+<li> Fiorela Ciroku, University of Bologna (elected 2020-2022)<br>
+<li> Pascal Hitzler, Kansas State University (vice chair - elected 2017-2020, elected 2020-2022)<br>
+<li> Adila Krisnadhi, Universitas Indonesia (elected 2017-2020, re-elected 2020-2022)<br>
+<li> Valentina Presutti, University of Bologna (vice chair - elected 2016-2018, vice chair - re-elected 2018-2020, elected 2020-2022)<br>
+<li> Jim Salmons, Citizen Scientist at FactMiners.org and The Softalk Apple Project (elected 2018-2020, re-elected 2020-2022)<br>
+</ul>
+
+<h3>PC members</h3>
+<ul>
+  <li>María Poveda, Universidad Politécnica de Madrid, Spain </li>
+  <li>Adila A. Krisnadhi, University of Indonesia, Indonesia </li>
+  <li>Christian Kindermann, University of Oslo, Norway</li>
+  <li>Nidhi Goyal, Mahindra University, India</li>
+  <li>Monika Jain, IIIT-Delhi, India</li>
+  <li>Valentina Anita Carriero, University of Bologna, Italy</li>
+  <li>Stefano De Giorgis, University of Bologna, Italy</li>
+  <li>Giorgia Lodi, National Research Council, Italy</li>
+  <li>Bruno Sartini, Ludwig-Maximilians University, Germany</li>
+  <li>Aaron Eberhart, Kansas State University, USA</li>
+  <li>Patricia Martin-Chozas, Universidad Politécnica de Madrid, Spain</li>
+  <li>Mohammad Saeid Mahdavinejad, Kansas State University, USA</li>
+  <li>Joseph Zalewski, Kansas State University, USA</li>
+  <li>Rushrukh Rayan, Kansas State University, USA</li>
+  <li>Cogan Shimizu, Wright State University, USA</li>
+</ul>
+</div>
+<h2 id="pictures">Pictures</h2>
+</div><hr style="color: blue;">
+
+<div class="slideshow">
+  <!-- Individual slides -->
+  <div class="slide" id="slide1">
+    <img src="pictures/image1.jpg" alt="Slide 1">
+  </div>
+  <div class="slide" id="slide2">
+    <img src="pictures/image2.jpg" alt="Slide 2">
+  </div>
+  <div class="slide" id="slide3">
+    <img src="pictures/image3.jpg" alt="Slide 3">
+  </div>
+    <div class="slide" id="slide4">
+    <img src="pictures/image4.jpg" alt="Slide 4">
+  </div>
+  <div class="slide" id="slide5">
+    <img src="pictures/image5.jpg" alt="Slide 5">
+  </div>
+    <div class="slide" id="slide6">
+    <img src="pictures/image6.jpg" alt="Slide 6">
+  </div>
+      <div class="slide" id="slide7">
+    <img src="pictures/image7.jpg" alt="Slide 7">
+
+</div>
+
+<!-- Navigation links -->
+<div class="nav">
+  <a href="#slide1">1</a>
+  <a href="#slide2">2</a>
+  <a href="#slide3">3</a>
+    <a href="#slide4">4</a>
+  <a href="#slide5">5</a>
+  <a href="#slide6">6</a>
+    <a href="#slide7">7</a>
+</div>
+</div>
+</body>
+</html>
