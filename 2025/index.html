@@ -1,18 +1,6 @@
-<!-- 
- Paper Type - NOTE: Specific types/limits NOT in PDF, placeholder removed. Needs update.
- Page limit - NOTE: Specific types/limits NOT in PDF, placeholder removed. Needs update.
- Easychai submission Link - NOTE: NOT in PDF, placeholder remains. Needs update.
- poster mandatory for acceptance - NOTE: NOT in PDF, section removed. Needs update if required.
- WOP chairs Cogan?.. and all - UPDATED from PDF.
- WOP steering committee - UPDATED (structure kept, names removed as not in PDF). Needs update with current members.
- Navigation link, about, call - Links confirmed, About/Call text UPDATED from PDF.
- Descriptive Text about workshop - UPDATED from PDF.
- -->
-
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>16th Workshop on Ontology Design and Patterns (WOP 2025)</title>
@@ -47,24 +35,16 @@
              font-weight: 700;
              line-height: 1.3;
          }
-         h1 {
-             font-size: 3em;
-         }
-         h2 {
-             font-size: 2.4em;
-         }
-         h3 {
-             font-size: 1.8em;
-         }
+         h1 { font-size: 3em; }
+         h2 { font-size: 2.4em; }
+         h3 { font-size: 1.8em; }
          a {
              color: #3182ce;
              text-decoration: none;
              transition: color 0.3s ease, transform 0.3s ease;
          }
-         a:hover {
-             color: #2c5282;
-             transform: translateX(2px);
-         }
+         a:hover { color: #2c5282; transform: translateX(2px); }
+
          /* Navigation Styles - (As provided) */
          nav {
              position: sticky;
@@ -86,17 +66,12 @@
              transition: color 0.3s ease, transform 0.3s ease;
              display: inline-block;
          }
-         nav a:hover {
-             color: #a3b18a;
-             transform: translateY(-2px);
-         }
+         nav a:hover { color: #a3b18a; transform: translateY(-2px); }
+
          /* List Styles - (As provided) */
-         ul, ol {
-             padding-left: 30px;
-         }
-         li {
-             margin-bottom: 10px;
-         }
+         ul, ol { padding-left: 30px; }
+         li { margin-bottom: 10px; }
+
          /* Code Block Styles - (As provided) */
          pre {
              background-color: #edf2f7;
@@ -107,6 +82,7 @@
              font-size: 0.95em;
              border: 1px solid #e2e8f0;
          }
+
          /* Highlighted Sections - (As provided) */
          .highlight {
              background-color: #edf2f7;
@@ -115,61 +91,26 @@
              margin-bottom: 20px;
              border: 1px solid #e2e8f0;
          }
+
          /* Header Text Styles - (As provided) */
-         .header-text {
-             text-align: center;
-             margin-bottom: 30px;
-         }
-         .header-text h1 {
-             font-size: 3.5em;
-             margin-bottom: 10px;
-         }
-         .header-text p {
-             font-size: 1.2em;
-             color: #718096;
-         }
+         .header-text { text-align: center; margin-bottom: 30px; }
+         .header-text h1 { font-size: 3.5em; margin-bottom: 10px; }
+         .header-text p { font-size: 1.2em; color: #718096; }
+
          /* Responsive Design - (As provided) */
          @media (max-width: 768px) {
-             .container {
-                 width: 95%;
-                 padding: 30px;
-                 margin: 30px auto;
-             }
-             nav a {
-                 margin: 0 15px;
-             }
-             h1 {
-                 font-size: 2.5em;
-             }
-             h2 {
-                 font-size: 2em;
-             }
-             h3 {
-                 font-size: 1.6em;
-             }
-             .header-text h1 {
-                 font-size: 2.8em;
-             }
-             .header-text p {
-                 font-size: 1em;
-             }
+             .container { width: 95%; padding: 30px; margin: 30px auto; }
+             nav a { margin: 0 15px; }
+             h1 { font-size: 2.5em; }
+             h2 { font-size: 2em; }
+             h3 { font-size: 1.6em; }
+             .header-text h1 { font-size: 2.8em; }
+             .header-text p { font-size: 1em; }
          }
+
          /* Animated Background - (As provided) */
-         .bg-animation {
-             position: fixed;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             z-index: 0;
-             pointer-events: none;
-         }
-         .bg-animation .circle {
-             position: absolute;
-             border-radius: 50%;
-             background: linear-gradient(to right, #a3b18a, #3182ce);
-             animation: moveCircles 15s linear infinite;
-         }
+         .bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+         .bg-animation .circle { position: absolute; border-radius: 50%; background: linear-gradient(to right, #a3b18a, #3182ce); animation: moveCircles 15s linear infinite; }
          .bg-animation .circle:nth-child(1) { width: 80px; height: 80px; top: 10%; left: 20%; animation-delay: 0s; }
          .bg-animation .circle:nth-child(2) { width: 120px; height: 120px; top: 30%; left: 70%; animation-delay: 2s; }
          .bg-animation .circle:nth-child(3) { width: 60px; height: 60px; top: 60%; left: 40%; animation-delay: 4s; }
@@ -180,22 +121,13 @@
              50% { transform: translateY(20px) translateX(10px) rotate(180deg); opacity: 0.8; }
              100% { transform: translateY(0) translateX(0) rotate(360deg); opacity: 0.6; }
          }
-         /* Basic Table Styling (optional, relies mostly on browser defaults & inherited styles) */
-         table {
-              width: 100%;
-              border-collapse: collapse; /* Good practice */
-              margin-top: 1em; /* Add some space above the table */
-         }
-         th, td {
-              border: 1px solid #e2e8f0; /* Use existing border color */
-              padding: 8px 10px;       /* Adjust padding as needed */
-              text-align: left;
-              vertical-align: top;
-         }
-         /* NO additional specific table styling (like background colors, hover effects) added */
+
+         /* Basic Table Styling (optional) */
+         table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+         th, td { border: 1px solid #e2e8f0; padding: 8px 10px; text-align: left; vertical-align: top; }
      </style>
- </head>
- <body>
+</head>
+<body>
      <!-- Animated Background -->
      <div class="bg-animation">
          <div class="circle"></div>
@@ -204,17 +136,17 @@
          <div class="circle"></div>
          <div class="circle"></div>
      </div>
- 
+
      <!-- Navigation -->
      <nav>
          <a href="#about">About</a>
          <a href="#call">Call for Papers</a>
          <a href="#submission">Submission</a>
          <a href="#dates">Important Dates</a>
-         <!-- <a href="#program">Program</a> -->
+         <a href="#schedule">Schedule</a>
          <a href="#organization">Organization</a>
      </nav>
- 
+
      <!-- Main Content -->
      <div class="container">
          <!-- Header Section Commented Out -->
@@ -225,7 +157,7 @@
                 November 9-10, 2025, Nara, Japan</p> 
          </div>
          -->
- 
+
          <section id="about" class="highlight">
              <h2>About</h2>
              <!-- Updated About Text from PDF Abstract and Section 1 -->
@@ -233,18 +165,18 @@
              <p>The workshop's aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions. A recent development in the Semantic Web community is that the general idea of "pattern" has begun to appear in different but related forms, and at WOP 2025, we intend to continue to include these new trends.</p>
              <p>The maturing of Semantic Web technologies cannot be separated from the need for high-quality, reusable ontologies and ontology-based applications. Different types of ODPs have emerged and been proposed to address these quality and reusability issues, and furthermore, methods for devising and discovering new patterns from heterogeneous knowledge sources are being developed and perfected. Patterns offer a number of benefits to ontology engineers and Semantic Web developers, including direct links to their ontology requirements, data and linguistic grounding, as well as support for reuse, guidance, and better communication; the latter is particularly helpful for inexperienced ontology engineers and domain experts who are typically not very familiar with ontology-based modeling. To achieve the inter-personal communication and machine interoperability benefits, patterns need to be shared by a community in order to provide a common language, a discourse, for discussing and understanding the modeling problems. Hence, the aim of this workshop is twofold: (1) to continue providing an arena for proposing and discussing patterns, pattern-based ontologies, systems etc., and (2) to sustain and broaden the pattern community that will further develop its own "language" for discussing and describing modeling problems and their solutions, similarly to what is now the case in software engineering.</p>
          </section>
- 
+
          <section id="call" class="highlight">
              <h2>Call for Papers and Patterns</h2>
              <!-- Updated Call intro - simplified as PDF lacked specific types/limits -->
              <p>We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs) as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. We invite the submission from there three ctegories</p>
              <!-- Removed specific paper categories/limits as they were not in the PDF -->
              <li>Research papers (maximum 12 pages CEUR style) presenting mature work and established results. </li>
-<li>Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions. </li>
-<li>Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</li>
-<li>All the page limit applies excluding references.</li>          
+             <li>Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions. </li>
+             <li>Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</li>
+             <li>All the page limit applies excluding references.</li>          
              
-          <h3>Topics of Interest</h3>
+            <h3>Topics of Interest</h3>
              <!-- Updated Topics list from PDF Section 3 -->
              <p>The main topics of interest are:</p>
              <ul>
@@ -291,24 +223,68 @@
                </li>
              </ul>
          </section>
- 
+
          <section id="submission" class="highlight">
              <h2>Submission Instructions</h2>
              <!-- Updated Placeholder Link Text -->
              <p>Submissions should be made via <a href="https://easychair.org/conferences/?conf=wop2025">EasyChair</a>. Papers will be peer-reviewed (single-blind). Detailed instructions will be found at the submission page. Note that pattern descriptions may also need to be submitted to the ontologydesignpatterns.org community portal (details TBC).</p>
              <!-- Removed Poster section as it wasn't mentioned in the PDF -->
          </section>
- 
+
          <section id="dates" class="highlight">
              <h2>Important Dates</h2>
              <!-- NOTE: Dates below are placeholders from template, NOT from PDF. NEED UPDATE. -->
              <ul>
                  <li>Workshop paper submissions: August 12, 2025</li>
                  <li>Workshop program with list of accepted papers available online: August 29, 2025</li>
-                 <li>Workshop will be held on: November 2-3, 2025 </li> <!-- Workshop dates from original HTML -->
+                 <li>Workshop will be held on: November 2-3, 2025 </li>
              </ul>
          </section>
- 
+
+         <!-- New Schedule Section -->
+         <section id="schedule" class="highlight">
+             <h2>Schedule</h2>
+
+             <h3>Session 1 <span style="font-weight:600;">[9:00–10:30 AM, Nov 3]</span></h3>
+             <ul>
+                 <li><strong>Paper ID-1</strong> — 9:00–9:20 — <em>Is SHACL Suitable for Data Quality Assessment?</em> — Caroline Cortés, Lisa Ehrlinger, Lorena Etcheverry, Felix Naumann</li>
+                 <li>9:20–9:25 — Q&amp;A</li>
+                 <li><strong>Paper ID-3</strong> — 9:25–9:45 — <em>BEAR: A Value-First Ontology Engineering Framework for Business Ecosystem Analysis and Representation</em> — Alican Tüzün, Nick Bassiliades, Herbert Jodlbauer, Georgios Meditskos</li>
+                 <li>9:45–9:50 — Q&amp;A</li>
+                 <li><strong>Keynote Speaker</strong> — 9:50–10:20 — <em>NEO4J — graph database management system that efficiently stores and queries connected data</em></li>
+                 <li>10:20–10:30 — Q&amp;A</li>
+             </ul>
+
+             <h3>Session 2 <span style="font-weight:600;">[11:00–12:30 PM, Nov 3]</span></h3>
+             <ul>
+                 <li><strong>Paper ID-5</strong> — 11:00–11:20 — <em>Capturing Requests and Context for ODRL-based Access and Usage Control</em> — Beatriz Esteves, Wout Slabbinck, Yassir Sellami, Andrea Cimmino, Victor Rodriguez-Doncel, Ruben Verborgh</li>
+                 <li>11:20–11:25 — Q&amp;A</li>
+                 <li><strong>Paper ID-9</strong> — 11:25–11:45 — <em>An Ontology Design Pattern for Representing Temporal Indirection</em> — Yulia Svetashova</li>
+                 <li>11:45–11:50 — Q&amp;A</li>
+                 <li><strong>Paper ID-6</strong> — 11:50–12:10 — <em>ARGOS: Ontology Design Patterns for Governing Dynamic Data Operations in LLM-Powered Applications</em> — Nipun D. Pathirage, Oshani Seneviratne, Deborah L. McGuinness</li>
+                 <li>12:10–12:15 — Q&amp;A</li>
+             </ul>
+
+             <h3>Session 3 <span style="font-weight:600;">[1:30–3:00 PM, Nov 3]</span></h3>
+             <ul>
+                 <li><strong>Paper ID-2</strong> — 1:30–1:50 — <em>AISHIP: An Ontology for Extended Vessel Representation and Multimodal Data Integration</em> — Simon Burbach, Lennart Mackert, Maria Maleshkova</li>
+                 <li>1:50–1:55 — Q&amp;A</li>
+                 <li><strong>Paper ID-7</strong> — 1:55–2:15 — <em>MQTT4SSN: An Ontology for the MQTT Message Protocol</em> — Niklas Doerner, Maria Maleshkova</li>
+                 <li>2:15–2:20 — Q&amp;A</li>
+                 <li><strong>Paper ID-8</strong> — 2:20–2:40 — <em>Incentivizing Sustainable Data Exchanges through Unique Contextualization of History and Destiny</em> — Wout Slabbinck, Beatriz Esteves, Maarten de Midlt, Ruben Dedecker, Julián Rojas Meléndez, Sofie Verbrugge, Didier Colle, Pieter Colpaert, Ruben Verborgh</li>
+                 <li>2:40–2:45 — Q&amp;A</li>
+             </ul>
+
+             <h3>Session 4 <span style="font-weight:600;">[3:30–5:00 PM, Nov 3]</span></h3>
+             <ul>
+                 <li>Overflow talk slot — 3:30–3:50</li>
+                 <li>3:50–3:55 — Q&amp;A</li>
+                 <li>Discussion panel with authors — 3:55–4:15</li>
+                 <li>Open discussion / Q&amp;A — 4:15–4:50</li>
+                 <li>Closing remarks — 4:50–5:00</li>
+             </ul>
+         </section>
+
          <!-- Program Section Commented Out -->
          <!--
          <section id="program" class="highlight">
@@ -364,13 +340,13 @@
              </table>
          </section>
          -->
- 
+
          <section>
              <h2>Proceedings</h2>
              <!-- Updated Proceedings info from PDF Section 4 -->
              <p>Proceedings will be published via CEUR. We will also provide the option of not archiving the submissions on CEUR to the authors.</p>
          </section>
- 
+
          <section id="organization" class="highlight">
              <h2>WOP Organization</h2>
              <!-- Updated Chairs list from PDF -->
@@ -382,15 +358,15 @@
                  <li>Eva Blomqvist, Linköping University, Sweden (General Co-chair)</li>
                  <li>Pascal Hitzler, Kansas State University, USA (General Co-chair)</li>
              </ul>
- 
+
              <h3>Steering Committee</h3>
-              <!-- Updated Steering Committee info - refers to ODPA board, specific names removed as not in PDF -->
+             <!-- Updated Steering Committee info - refers to ODPA board, specific names removed as not in PDF -->
              <p>The WOP Steering committee - the Board of the Association of Ontology Design and Patterns (<a href="http://ontologydesignpatterns.org/wiki/ODPA">http://ontologydesignpatterns.org/wiki/ODPA</a>) - consists of:</p>
              <ul>
                 <li>Andrea Giovanni Nuzzolese, ISTC-CNR (chair - elected 2020-2022)</li> 
-                 <li>[Soon to be updated]</li> <!-- Placeholder -->
+                 <li>[Soon to be updated]</li>
              </ul>
          </section>
      </div>
- </body>
- </html>
+</body>
+</html>
