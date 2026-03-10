@@ -1,145 +1,414 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    body {background-color: #f1f4f6}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3a4355; -webkit-text-stroke: #3a4355; min-height: 15.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #276cc3}
-    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3a4355; -webkit-text-stroke: #3a4355}
-    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3a4355; -webkit-text-stroke: #3a4355; background-color: #e9eff5}
-    p.p6 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3a4355; -webkit-text-stroke: #3a4355}
-    li.li6 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #3a4355; -webkit-text-stroke: #3a4355}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #e9eff5}
-    span.s3 {background-color: #e9eff5; -webkit-text-stroke: 0px #000000}
-    span.s4 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #276cc3; -webkit-text-stroke: 0px #276cc3}
-    span.s5 {font-kerning: none; background-color: #ffffff}
-    ul.ul1 {list-style-type: disc}
-    ul.ul2 {list-style-type: circle}
-  </style>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>16th Workshop on Ontology Design and Patterns (WOP 2025)</title>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+     <style>
+         /* General Styles - (As provided in your WOP 2025 template) */
+         body {
+             font-family: 'Nunito', sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f6f8;
+             color: #4a5568;
+             line-height: 1.7;
+             -webkit-font-smoothing: antialiased;
+             -moz-osx-font-smoothing: grayscale;
+             overflow-x: hidden;
+         }
+         .container {
+             width: 90%;
+             max-width: 1200px;
+             margin: 50px auto;
+             padding: 40px;
+             background-color: #fff;
+             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+             border-radius: 15px;
+             position: relative;
+             z-index: 1;
+         }
+         h1, h2, h3 {
+             color: #2d3748;
+             margin-bottom: 25px;
+             font-weight: 700;
+             line-height: 1.3;
+         }
+         h1 { font-size: 3em; }
+         h2 { font-size: 2.4em; }
+         h3 { font-size: 1.8em; }
+         a {
+             color: #3182ce;
+             text-decoration: none;
+             transition: color 0.3s ease, transform 0.3s ease;
+         }
+         a:hover { color: #2c5282; transform: translateX(2px); }
+
+         /* Navigation Styles - (As provided) */
+         nav {
+             position: sticky;
+             top: 0;
+             background-color: #3182ce;
+             color: white;
+             padding: 20px 0;
+             text-align: center;
+             z-index: 10;
+             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+         }
+         nav a {
+             color: white;
+             margin: 0 25px;
+             text-decoration: none;
+             font-weight: 600;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+             transition: color 0.3s ease, transform 0.3s ease;
+             display: inline-block;
+         }
+         nav a:hover { color: #a3b18a; transform: translateY(-2px); }
+
+         /* List Styles - (As provided) */
+         ul, ol { padding-left: 30px; }
+         li { margin-bottom: 10px; }
+
+         /* Code Block Styles - (As provided) */
+         pre {
+             background-color: #edf2f7;
+             padding: 20px;
+             border-radius: 12px;
+             overflow-x: auto;
+             font-family: 'Courier New', monospace;
+             font-size: 0.95em;
+             border: 1px solid #e2e8f0;
+         }
+
+         /* Highlighted Sections - (As provided) */
+         .highlight {
+             background-color: #edf2f7;
+             padding: 20px;
+             border-radius: 12px;
+             margin-bottom: 20px;
+             border: 1px solid #e2e8f0;
+         }
+
+         /* Header Text Styles - (As provided) */
+         .header-text { text-align: center; margin-bottom: 30px; }
+         .header-text h1 { font-size: 3.5em; margin-bottom: 10px; }
+         .header-text p { font-size: 1.2em; color: #718096; }
+
+         /* Responsive Design - (As provided) */
+         @media (max-width: 768px) {
+             .container { width: 95%; padding: 30px; margin: 30px auto; }
+             nav a { margin: 0 15px; }
+             h1 { font-size: 2.5em; }
+             h2 { font-size: 2em; }
+             h3 { font-size: 1.6em; }
+             .header-text h1 { font-size: 2.8em; }
+             .header-text p { font-size: 1em; }
+         }
+
+         /* Animated Background - (As provided) */
+         .bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+         .bg-animation .circle { position: absolute; border-radius: 50%; background: linear-gradient(to right, #a3b18a, #3182ce); animation: moveCircles 15s linear infinite; }
+         .bg-animation .circle:nth-child(1) { width: 80px; height: 80px; top: 10%; left: 20%; animation-delay: 0s; }
+         .bg-animation .circle:nth-child(2) { width: 120px; height: 120px; top: 30%; left: 70%; animation-delay: 2s; }
+         .bg-animation .circle:nth-child(3) { width: 60px; height: 60px; top: 60%; left: 40%; animation-delay: 4s; }
+         .bg-animation .circle:nth-child(4) { width: 100px; height: 100px; top: 80%; left: 10%; animation-delay: 6s; }
+         .bg-animation .circle:nth-child(5) { width: 70px; height: 70px; top: 40%; left: 90%; animation-delay: 8s; }
+         @keyframes moveCircles {
+             0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0.6; }
+             50% { transform: translateY(20px) translateX(10px) rotate(180deg); opacity: 0.8; }
+             100% { transform: translateY(0) translateX(0) rotate(360deg); opacity: 0.6; }
+         }
+
+         /* Basic Table Styling (optional) */
+         table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+         th, td { border: 1px solid #e2e8f0; padding: 8px 10px; text-align: left; vertical-align: top; }
+     </style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">ABOUT CALL FOR PAPERS SUBMISSION IMPORTANT DATES SCHEDULE ORGANIZATION</span></p>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">About</span></h2>
-<p class="p4"><span class="s2">The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of the Semantic Web, such as knowledge graphs, can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of direct links to requirements, reuse, guidance, and better communication.</span></p>
-<p class="p4"><span class="s2">The workshop's aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions. A recent development in the Semantic Web community is that the general idea of "pattern" has begun to appear in different but related forms, and at WOP 2026, we intend to continue to include these new trends.</span></p>
-<p class="p5"><span class="s1">The maturing of Semantic Web technologies cannot be separated from the need for high-quality, reusable ontologies and ontology-based applications. Different types of ODPs have emerged and been proposed to address these quality and reusability issues, and furthermore, methods for devising and discovering new patterns from heterogeneous knowledge sources are being developed and perfected. Patterns offer a number of benefits to ontology engineers and Semantic Web developers, including direct links to their ontology requirements, data and linguistic grounding, as well as support for reuse, guidance, and better communication; the latter is particularly helpful for inexperienced ontology engineers and domain experts who are typically not very familiar with ontology-based modeling. To achieve the inter-personal communication and machine interoperability benefits, patterns need to be shared by a community in order to provide a common language, a discourse, for discussing and understanding the modeling problems. Hence, the aim of this workshop is twofold: (1) to continue providing an arena for proposing and discussing patterns, pattern-based ontologies, systems etc., and (2) to sustain and broaden the pattern community that will further develop its own "language" for discussing and describing modeling problems and their solutions, similarly to what is now the case in software engineering.</span></p>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Call for Papers and Patterns</span></h2>
-<p class="p4"><span class="s2">We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs) as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. We invite the submission from there three ctegories</span></p>
-<p class="p6"><span class="s2">Research papers (maximum 12 pages CEUR style) presenting mature work and established results.</span></p>
-<p class="p6"><span class="s2">Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions.</span></p>
-<p class="p6"><span class="s2">Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</span></p>
-<p class="p6"><span class="s2">All the page limit applies excluding references.</span></p>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Topics of Interest</span></h3>
-<p class="p4"><span class="s2">The main topics of interest are:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Use of ontology design patterns for any kind of knowledge engineering, including</span></li>
-  <ul class="ul2">
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern-based ontology design, conceptual modeling or knowledge engineering broadly</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern use in knowledge graph or linked data creation (including pattern-driven linking or data publishing)</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern-based information extraction, ontology learning, and relation to NLP</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern use in streaming, ingesting or evolving knowledge</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern-based development of semantic applications</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)</span></li>
-  </ul>
-  <li class="li6"><span class="s3"></span><span class="s2">Methods and tools for developing high-quality ontologies (with or without the help of patterns), including</span></li>
-  <ul class="ul2">
-    <li class="li6"><span class="s3"></span><span class="s2">Ontology engineering by domain experts</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Quality attributes or metrics in ontologies and ontology engineering</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Quality assurance and testing approaches for ontology engineering</span></li>
-  </ul>
-  <li class="li6"><span class="s3"></span><span class="s2">Development or analysis of ontology design patterns, including</span></li>
-  <ul class="ul2">
-    <li class="li6"><span class="s3"></span><span class="s2">Pattern extraction</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Analyses of ontology design patterns or their uses</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Antipatterns and their relations to ODPs</span></li>
-  </ul>
-  <li class="li6"><span class="s3"></span><span class="s2">Development and use of patterns in specific domains, including</span></li>
-  <ul class="ul2">
-    <li class="li6"><span class="s3"></span><span class="s2">Data lakes, business intelligence, or Big Data integration</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Geosciences, life sciences, engineering, digital humanities, cultural preservation, and sustainability</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">IoT, smart homes &amp; cities, smart agriculture</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Semantic technology including social networks, semantic wikis or blogs.</span></li>
-  </ul>
-  <li class="li6"><span class="s3"></span><span class="s2">Modularity in Knowledge graphs and patterns, including</span></li>
-  <ul class="ul2">
-    <li class="li6"><span class="s3"></span><span class="s2">Theoretical and cognitive aspects of modularity</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Modularity in knowledge engineering, knowledge graphs, ontologies, and linked data</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Extraction, versioning and evolution with modules</span></li>
-    <li class="li6"><span class="s3"></span><span class="s2">Representing knowledge in context</span></li>
-  </ul>
-</ul>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Submission Instructions</span></h2>
-<p class="p4"><span class="s2">Submissions for the workshop were handled via EasyChair.</span></p>
-<p class="p4"><span class="s2">The proceedings of the workshop are available at <a href="https://ceur-ws.org/Vol-4093/"><span class="s4">CEUR-WS Volume 4093 </span></a>.</span></p>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Important Dates</span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Workshop paper submissions: August 12, 2026</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Workshop program with list of accepted papers available online: August 29, 2026</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Workshop will be held on: November 2-3, 2026</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Schedule</span></h2>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Session 1 [9:00–10:30 AM, Nov 3]</span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-1 — 9:00–9:20 — Is SHACL Suitable for Data Quality Assessment? <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/2025/Paper%20ID-1_IsSHACLSuitableForDataQualityAssessment.pptx"><span class="s4">[pptx]</span></a> — Caroline Cortés, Lisa Ehrlinger, Lorena Etcheverry, Felix Naumann</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">9:20–9:25 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-3 — 9:25–9:45 — BEAR: A Value-First Ontology Engineering Framework for Business Ecosystem Analysis and Representation <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/PaperID_3_BEAR%20A%20Value-First%20Ontology%20Engineering%20Framework%20for%20Business%20Ecosystem%20Analysis%20and%20Representation.pptx"><span class="s4">[pptx]</span></a> — Alican Tüzün, Nick Bassiliades, Herbert Jodlbauer, Georgios Meditskos</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">9:45–9:50 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Open discussion / Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">9:50–10:30</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Session 2 [11:00–12:30 PM, Nov 3]</span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-5 — 11:00–11:20 — Capturing Requests and Context for ODRL-based Access and Usage Control <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/PaperID-5_CapturingRequestsAndContext.pptx"><span class="s4">[pptx]</span></a> — Beatriz Esteves, Wout Slabbinck, Yassir Sellami, Andrea Cimmino, Victor Rodriguez-Doncel, Ruben Verborgh</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">11:20–11:25 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-9 — 11:25–11:45 — An Ontology Design Pattern for Representing Temporal Indirection <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/PaperID-9_AnOntologyDesignPatternForRepresentingTemporalIndirection.pptx"><span class="s4">[pptx]</span></a> — Yulia Svetashova</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">11:45–11:50 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-6 — 11:50–12:10 — ARGOS: Ontology Design Patterns for Governing Dynamic Data Operations in LLM-Powered Applications <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/2025/PaperID-6-ARGOS.pptx"><span class="s4">[pptx]</span></a> — Nipun D. Pathirage, Oshani Seneviratne, Deborah L. McGuinness</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">12:10–12:15 — Q&amp;A</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Session 3 [1:30–3:00 PM, Nov 3]</span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-2 — 1:30–1:50 — AISHIP: An Ontology for Extended Vessel Representation and Multimodal Data Integration <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/PaperID-2_AISHIP_An_Ontology_for_Extended_Vessel_Representation_and_Multimodal_Data_Integration.pptx"><span class="s4">[pptx]</span></a> — Simon Burbach, Lennart Mackert, Maria Maleshkova</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">1:50–1:55 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-7 — 1:55–2:15 — MQTT4SSN: An Ontology for the MQTT Message Protocol <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/2025/PaperID-7_%20MQTT4SSN.pptx"><span class="s4">[pptx]</span></a> — Niklas Doerner, Maria Maleshkova</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">2:15–2:20 — Q&amp;A</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Paper ID-8 — 2:20–2:40 — Incentivizing Sustainable Data Exchanges through Unique Contextualization of History and Destiny <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/PaperID-8_Incentivizing-Sustainable-Data_Exchanges_through_Unique_Contextualization_of_History_and_Destiny.pptx"><span class="s4">[pptx]</span></a> — Wout Slabbinck, Beatriz Esteves, Maarten de Midlt, Ruben Dedecker, Julián Rojas Meléndez, Sofie Verbrugge, Didier Colle, Pieter Colpaert, Ruben Verborgh</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">2:40–2:45 — Q&amp;A</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Session 4 [3:30–5:00 PM, Nov 3]</span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Overflow talk slot — 3:30–3:55</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Discussion panel with authors — 3:55–4:15</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Keynote Speaker — 4:15–4:50 — From Zoo to Marketplace: Toward a Connected Ontology Ecosystem for the Semantic Web by Jason Koo <a href="file:///Users/gsi/Documents/workshop-on-ontology-design-and-patterns/2026/ontology_marketplace_presentation.pdf"><span class="s4">[pptx]</span></a></span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Closing remarks — 4:50–5:00</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s5">Proceedings</span></h2>
-<p class="p4"><span class="s5">Proceedings will be published via CEUR. We will also provide the option of not archiving the submissions on CEUR to the authors.</span></p>
-<h2 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">WOP Organization</span></h2>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">WOP 2026 Chairs</span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Hande Küçük McGinty, Kansas State University, USA (General Co-chair)</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Cogan Shimizu, Wright State University, USA (General Co-chair)</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Valentina Presutti, University of Bologna, Italy (Patterns Co-chair)</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Eva Blomqvist, Linköping University, Sweden (General Co-chair)</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">Pascal Hitzler, Kansas State University, USA (General Co-chair)</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 25.0px 0.0px; font: 21.6px 'Helvetica Neue'; color: #222938; -webkit-text-stroke: #222938"><span class="s2">Steering Committee</span></h3>
-<p class="p4"><span class="s2">The WOP Steering committee - the Board of the Association of Ontology Design and Patterns (<a href="http://ontologydesignpatterns.org/wiki/ODPA"><span class="s4">http://ontologydesignpatterns.org/wiki/ODPA</span></a>) - consists of:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s3"></span><span class="s2">Andrea Giovanni Nuzzolese, ISTC-CNR (chair - elected 2020-2022)</span></li>
-  <li class="li6"><span class="s3"></span><span class="s2">[Soon to be updated]</span></li>
-</ul>
+     <!-- Animated Background -->
+     <div class="bg-animation">
+         <div class="circle"></div>
+         <div class="circle"></div>
+         <div class="circle"></div>
+         <div class="circle"></div>
+         <div class="circle"></div>
+     </div>
+
+     <!-- Navigation -->
+     <nav>
+         <a href="#about">About</a>
+         <a href="#call">Call for Papers</a>
+         <a href="#submission">Submission</a>
+         <a href="#dates">Important Dates</a>
+         <a href="#schedule">Schedule</a>
+         <a href="#organization">Organization</a>
+     </nav>
+
+     <!-- Main Content -->
+     <div class="container">
+         <!-- Header Section Commented Out -->
+         <!--
+         <div class="header-text">
+             <h1>16th Workshop on Ontology Design and Patterns (WOP 2025)</h1>
+             <p>Co-located with the 24th International Semantic Web Conference (ISWC 2025)<br>
+                November 9-10, 2025, Nara, Japan</p> 
+         </div>
+         -->
+
+         <section id="about" class="highlight">
+             <h2>About</h2>
+             <!-- Updated About Text from PDF Abstract and Section 1 -->
+             <p>The WOP workshop series covers issues related to quality in ontology design and ontology design patterns (ODPs) for data and knowledge engineering in Semantic Web. The increased attention to ODPs in recent years through their interaction with emerging trends of the Semantic Web, such as knowledge graphs, can be attributed to their benefit for knowledge engineers and Semantic Web developers. Such benefits come in the form of direct links to requirements, reuse, guidance, and better communication.</p>
+             <p>The workshop's aim is thus not just: 1) providing an arena for discussing patterns, pattern-based ontologies, systems, datasets, but also 2) broadening the pattern community by developing its own "discourse" for discussing and describing relevant problems and their solutions. A recent development in the Semantic Web community is that the general idea of "pattern" has begun to appear in different but related forms, and at WOP 2025, we intend to continue to include these new trends.</p>
+             <p>The maturing of Semantic Web technologies cannot be separated from the need for high-quality, reusable ontologies and ontology-based applications. Different types of ODPs have emerged and been proposed to address these quality and reusability issues, and furthermore, methods for devising and discovering new patterns from heterogeneous knowledge sources are being developed and perfected. Patterns offer a number of benefits to ontology engineers and Semantic Web developers, including direct links to their ontology requirements, data and linguistic grounding, as well as support for reuse, guidance, and better communication; the latter is particularly helpful for inexperienced ontology engineers and domain experts who are typically not very familiar with ontology-based modeling. To achieve the inter-personal communication and machine interoperability benefits, patterns need to be shared by a community in order to provide a common language, a discourse, for discussing and understanding the modeling problems. Hence, the aim of this workshop is twofold: (1) to continue providing an arena for proposing and discussing patterns, pattern-based ontologies, systems etc., and (2) to sustain and broaden the pattern community that will further develop its own "language" for discussing and describing modeling problems and their solutions, similarly to what is now the case in software engineering.</p>
+         </section>
+
+         <section id="call" class="highlight">
+             <h2>Call for Papers and Patterns</h2>
+             <!-- Updated Call intro - simplified as PDF lacked specific types/limits -->
+             <p>We particularly welcome contributions on topics concerning the development of high-quality ontologies in general (with or without the help of ODPs) as well as studies and applications of ODPs for knowledge graph construction and maintenance. In addition, as usual, we also welcome pattern descriptions of all sorts, including patterns geared towards applications in specific domains such as geosciences, life sciences, sustainability, digital humanities, or e-commerce. We invite the submission from there three ctegories</p>
+             <!-- Removed specific paper categories/limits as they were not in the PDF -->
+             <li>Research papers (maximum 12 pages CEUR style) presenting mature work and established results. </li>
+             <li>Short papers (maximum 6 pages CEUR style) presenting proposed research directions, novel ideas, or more general positions or discussions. </li>
+             <li>Ontology Design Patterns (described in paper format, 5-12 pages CEUR style) should solve a particular modeling problem of relevance either to the broader ontology engineering community or to some specific knowledge domain in a novel and reusable manner. These must additionally be submitted through the ODP community portal. Note that accepted pattern submissions are presented through a poster session (see below).</li>
+             <li>All the page limit applies excluding references.</li>          
+             
+            <h3>Topics of Interest</h3>
+             <!-- Updated Topics list from PDF Section 3 -->
+             <p>The main topics of interest are:</p>
+             <ul>
+               <li>Use of ontology design patterns for any kind of knowledge engineering, including
+                 <ul>
+                   <li> Pattern-based ontology design, conceptual modeling or knowledge engineering broadly</li>
+                   <li> Pattern use in knowledge graph or linked data creation (including pattern-driven linking or data publishing)</li>
+                   <li> Pattern-based information extraction, ontology learning, and relation to NLP</li>
+                   <li> Pattern use in streaming, ingesting or evolving knowledge</li>
+                   <li> Use of patterns for ontology evaluation, quality assurance, ontology selection, integration or alignment</li>
+                   <li> Pattern-based development of semantic applications</li>
+                   <li> Reasoning with patterns (including automated reasoning, verification, or contextual reasoning)</li>
+                 </ul>
+               </li>
+               <li>Methods and tools for developing high-quality ontologies (with or without the help of patterns), including
+                 <ul>
+                   <li> Ontology engineering by domain experts</li>
+                   <li> Quality attributes or metrics in ontologies and ontology engineering</li>
+                   <li> Quality assurance and testing approaches for ontology engineering</li>
+                 </ul>
+               </li>
+               <li>Development or analysis of ontology design patterns, including
+                 <ul>
+                   <li> Pattern extraction</li>
+                   <li> Analyses of ontology design patterns or their uses</li>
+                   <li> Antipatterns and their relations to ODPs</li>
+                 </ul>
+               </li>
+               <li>Development and use of patterns in specific domains, including
+                 <ul>
+                   <li> Data lakes, business intelligence, or Big Data integration</li>
+                   <li> Geosciences, life sciences, engineering, digital humanities, cultural preservation, and sustainability</li>
+                   <li> IoT, smart homes & cities, smart agriculture</li>
+                   <li> Semantic technology including social networks, semantic wikis or blogs.</li>
+                 </ul>
+               </li>
+               <li>Modularity in Knowledge graphs and patterns, including
+                 <ul>
+                   <li> Theoretical and cognitive aspects of modularity</li>
+                   <li> Modularity in knowledge engineering, knowledge graphs, ontologies, and linked data</li>
+                   <li> Extraction, versioning and evolution with modules</li>
+                   <li> Representing knowledge in context</li>
+                 </ul>
+               </li>
+             </ul>
+         </section>
+
+         <section id="submission" class="highlight">
+            <h2>Submission Instructions</h2>
+            <p>
+                Submissions for the workshop were handled via EasyChair.
+            </p>
+            <p>
+                The proceedings of the workshop are available at
+                <a href="https://ceur-ws.org/Vol-4093/" target="_blank" rel="noopener noreferrer">
+                    CEUR-WS Volume 4093
+                </a>.
+            </p>
+        </section>
+        
+
+         <section id="dates" class="highlight">
+             <h2>Important Dates</h2>
+             <!-- NOTE: Dates below are placeholders from template, NOT from PDF. NEED UPDATE. -->
+             <ul>
+                 <li>Workshop paper submissions: August 12, 2025</li>
+                 <li>Workshop program with list of accepted papers available online: August 29, 2025</li>
+                 <li>Workshop will be held on: November 2-3, 2025 </li>
+             </ul>
+         </section>
+
+         <!-- New Schedule Section -->
+         <section id="schedule" class="highlight">
+            <h2>Schedule</h2>
+        
+            <h3>Session 1 <span style="font-weight:600;">[9:00–10:30 AM, Nov 3]</span></h3>
+            <ul>
+                <li><strong>Paper ID-1</strong> — 9:00–9:20 — 
+                    <em>Is SHACL Suitable for Data Quality Assessment?</em>
+                    <a href="2025/Paper ID-1_IsSHACLSuitableForDataQualityAssessment.pptx">[pptx]</a>
+                    — Caroline Cortés, Lisa Ehrlinger, Lorena Etcheverry, Felix Naumann
+                </li>
+                <li>9:20–9:25 — Q&amp;A</li>
+                <li><strong>Paper ID-3</strong> — 9:25–9:45 — 
+                    <em>BEAR: A Value-First Ontology Engineering Framework for Business Ecosystem Analysis and Representation</em>
+                    <a href="PaperID_3_BEAR A Value-First Ontology Engineering Framework for Business Ecosystem Analysis and Representation.pptx">[pptx]</a>
+                    — Alican Tüzün, Nick Bassiliades, Herbert Jodlbauer, Georgios Meditskos
+                </li>
+                <li>9:45–9:50 — Q&amp;A</li>
+                <li><strong>Open discussion / Q&amp;A</strong></li>
+                <li>9:50–10:30</li>
+            </ul>
+        
+            <h3>Session 2 <span style="font-weight:600;">[11:00–12:30 PM, Nov 3]</span></h3>
+            <ul>
+                <li><strong>Paper ID-5</strong> — 11:00–11:20 — 
+                    <em>Capturing Requests and Context for ODRL-based Access and Usage Control</em>
+                    <a href="PaperID-5_CapturingRequestsAndContext.pptx">[pptx]</a>
+                    — Beatriz Esteves, Wout Slabbinck, Yassir Sellami, Andrea Cimmino, Victor Rodriguez-Doncel, Ruben Verborgh
+                </li>
+                <li>11:20–11:25 — Q&amp;A</li>
+                <li><strong>Paper ID-9</strong> — 11:25–11:45 — 
+                    <em>An Ontology Design Pattern for Representing Temporal Indirection</em>
+                    <a href="PaperID-9_AnOntologyDesignPatternForRepresentingTemporalIndirection.pptx">[pptx]</a>
+                    — Yulia Svetashova
+                </li>
+                <li>11:45–11:50 — Q&amp;A</li>
+                <li><strong>Paper ID-6</strong> — 11:50–12:10 — 
+                    <em>ARGOS: Ontology Design Patterns for Governing Dynamic Data Operations in LLM-Powered Applications</em>
+                    <a href="2025/PaperID-6-ARGOS.pptx">[pptx]</a>
+                    — Nipun D. Pathirage, Oshani Seneviratne, Deborah L. McGuinness
+                </li>
+                <li>12:10–12:15 — Q&amp;A</li>
+            </ul>
+        
+            <h3>Session 3 <span style="font-weight:600;">[1:30–3:00 PM, Nov 3]</span></h3>
+            <ul>
+                <li><strong>Paper ID-2</strong> — 1:30–1:50 — 
+                    <em>AISHIP: An Ontology for Extended Vessel Representation and Multimodal Data Integration</em>
+                    <a href="PaperID-2_AISHIP_An_Ontology_for_Extended_Vessel_Representation_and_Multimodal_Data_Integration.pptx">[pptx]</a>
+                    — Simon Burbach, Lennart Mackert, Maria Maleshkova
+                </li>
+                <li>1:50–1:55 — Q&amp;A</li>
+                <li><strong>Paper ID-7</strong> — 1:55–2:15 — 
+                    <em>MQTT4SSN: An Ontology for the MQTT Message Protocol</em>
+                    <a href="2025/PaperID-7_ MQTT4SSN.pptx">[pptx]</a>
+                    — Niklas Doerner, Maria Maleshkova
+                </li>
+                <li>2:15–2:20 — Q&amp;A</li>
+                <li><strong>Paper ID-8</strong> — 2:20–2:40 — 
+                    <em>Incentivizing Sustainable Data Exchanges through Unique Contextualization of History and Destiny</em>
+                    <a href="PaperID-8_Incentivizing-Sustainable-Data_Exchanges_through_Unique_Contextualization_of_History_and_Destiny.pptx">[pptx]</a>
+                    — Wout Slabbinck, Beatriz Esteves, Maarten de Midlt, Ruben Dedecker, Julián Rojas Meléndez, Sofie Verbrugge, Didier Colle, Pieter Colpaert, Ruben Verborgh
+                </li>
+                <li>2:40–2:45 — Q&amp;A</li>
+            </ul>
+        
+            <h3>Session 4 <span style="font-weight:600;">[3:30–5:00 PM, Nov 3]</span></h3>
+            <ul>
+                <li>Overflow talk slot — 3:30–3:55</li>
+                <li>Discussion panel with authors — 3:55–4:15</li>
+                <li><strong>Keynote Speaker</strong> — 4:15–4:50 — 
+                    <em>From Zoo to Marketplace: Toward a Connected Ontology Ecosystem for the Semantic Web by Jason Koo</em>
+                    <a href="ontology_marketplace_presentation.pdf">[pptx]</a>
+                </li>
+                <li>Closing remarks — 4:50–5:00</li>
+            </ul>
+        </section>
+        
+
+         <!-- Program Section Commented Out -->
+         <!--
+         <section id="program" class="highlight">
+             <h2>Program</h2>
+             <p><em><strong>Note:</strong> The workshop format will include an invited talk, paper presentations with discussion, and interactive breakout sessions. The detailed program below is a placeholder from a previous year and will be announced closer to the date.</em></p>
+             <table>
+                 <tr>
+                     <td> 9:00 - 9:30</td>
+                     <td colspan="2"> Introduction</td>
+                 </tr>
+                 <tr>
+                     <td> 9:30 - 9:45</td>
+                     <td> IndiLegalOnt: An Ontology for the Indian Legal System <a href="#">(slides)</a></td> 
+                     <td> Apurv Dube, Joseph Pokkatt, Raghava Mutharaju, Vikram Goyal</td>
+                 </tr>
+                 <tr>
+                     <td> 9:45 - 10:00</td>
+                     <td> One Pattern to Express Them All? Towards Generalised Patterns for Ontology Design in the Digital Humanities <a href="#">(slides)</a></td> 
+                     <td> Sarah Rebecca Ondraszek, Bruno Sartini, Marieke van Erp, Andrea Poltronieri, Pasquale Lisena, Harald Sack</td>
+                 </tr>
+                 <tr>
+                     <td> 10:00 - 10:15</td>
+                     <td> Phased Evaluation of Ontologies with Domain and Ontology Experts <a href="#">(slides)</a></td> 
+                     <td> Alex Randles, Declan O'Sullivan</td>
+                 </tr>
+                 <tr>
+                     <td> 10:15 - 10:30</td>
+                     <td> Towards Computable and Explainable Policies Using Semantic Web Standards <a href="#">(slides)</a></td> 
+                     <td> Henrique Santos, Jamie McCusker, John S. Erickson, Alice M. Mulvehill, Oshani Seneviratne, Deborah McGuinness</td>
+                 </tr>
+                 <tr>
+                     <td> 10:40 - 11:00</td>
+                     <td colspan="2"> Coffee Break</td>
+                 </tr>
+                 <tr>
+                     <td> 11:00 - 12:10</td>
+                     <td colspan="2"> Keynote</td>
+                 </tr>
+                 <tr>
+                     <td> 12:10 - 12:25</td>
+                     <td> Kind of X and X of Interest: An Ontology Design Pattern to Reconcile Web of Thing Ontologies <a href="#">(slides)</a></td> 
+                     <td> Maxime Lefrançois, Catherine Roussey, Fatma-Zohra Hannou, Victor Charpenay, Antoine Zimmermann</td>
+                 </tr>
+                 <tr>
+                     <td> 12:25 - 12:40</td>
+                     <td> Ontology Design Metapattern for RelationType Role Compositions <a href="#">(slides)</a></td> 
+                     <td> Utkarshani Jaimini, Ruwan Wickramarachchi, Cory Henson, Amit P. Sheth</td>
+                 </tr>
+                 <tr>
+                     <td> 12:40 - x</td>
+                     <td colspan="2"> End / Lunch</td>
+                 </tr>
+             </table>
+         </section>
+         -->
+
+         <section>
+             <h2>Proceedings</h2>
+             <!-- Updated Proceedings info from PDF Section 4 -->
+             <p>Proceedings will be published via CEUR. We will also provide the option of not archiving the submissions on CEUR to the authors.</p>
+         </section>
+
+         <section id="organization" class="highlight">
+             <h2>WOP Organization</h2>
+             <!-- Updated Chairs list from PDF -->
+             <h3>WOP 2025 Chairs</h3>
+             <ul>
+                 <li>Hande Küçük McGinty, Kansas State University, USA (General Co-chair)</li>
+                 <li>Cogan Shimizu, Wright State University, USA (General Co-chair)</li>
+                 <li>Valentina Presutti, University of Bologna, Italy (Patterns Co-chair)</li>
+                 <li>Eva Blomqvist, Linköping University, Sweden (General Co-chair)</li>
+                 <li>Pascal Hitzler, Kansas State University, USA (General Co-chair)</li>
+             </ul>
+
+             <h3>Steering Committee</h3>
+             <!-- Updated Steering Committee info - refers to ODPA board, specific names removed as not in PDF -->
+             <p>The WOP Steering committee - the Board of the Association of Ontology Design and Patterns (<a href="http://ontologydesignpatterns.org/wiki/ODPA">http://ontologydesignpatterns.org/wiki/ODPA</a>) - consists of:</p>
+             <ul>
+                <li>Andrea Giovanni Nuzzolese, ISTC-CNR (chair - elected 2020-2022)</li> 
+                 <li>[Soon to be updated]</li>
+             </ul>
+         </section>
+     </div>
 </body>
 </html>
