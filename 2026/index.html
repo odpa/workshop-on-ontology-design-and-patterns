@@ -130,14 +130,19 @@
          .highlight { background-color: #ffffff; border-color: #d3e2f3; }
          #program { background-color: #f6f9fc; }
 
-         /* Workshop title appears in the sticky nav once the page header scrolls away */
-         .nav-title { display: none; font-weight: 700; font-size: 1.05em; margin-bottom: 8px; }
-         nav.show-title .nav-title { display: block; }
+         /* Sticky nav: short title on the left, links on the right */
+         nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 14px max(5%, calc((100% - 1200px) / 2)); text-align: left; }
+         .nav-title { font-weight: 700; font-size: 1.15em; letter-spacing: 1px; }
+         .nav-links a { margin: 0 0 0 22px; }
+         .nav-links a:first-child { margin-left: 0; }
+         @media (max-width: 1000px) { nav { justify-content: center; } .nav-title { display: none; } .nav-links a { margin: 0 10px; } }
 
          /* Responsive Design - (As provided) */
          @media (max-width: 768px) {
              .container { width: 95%; padding: 30px; margin: 30px auto; }
-             nav a { margin: 0 15px; }
+             nav { justify-content: center; }
+             .nav-title { display: none; }
+             .nav-links a { margin: 0 8px; }
              h1 { font-size: 2.5em; }
              h2 { font-size: 2em; }
              h3 { font-size: 1.6em; }
@@ -178,13 +183,15 @@
 
      <!-- Navigation -->
      <nav>
-         <div class="nav-title">17th Workshop on Ontology Design and Patterns (WOP 2026)</div>
+         <span class="nav-title">WOP 2026</span>
+         <div class="nav-links">
          <a href="#about">About</a>
          <a href="#call">Call for Papers</a>
          <a href="#submission">Submission</a>
          <a href="#dates">Important Dates</a>
          <a href="#program">Program</a>
          <a href="#organization">Organization</a>
+         </div>
      </nav>
 
      <!-- Main Content -->
@@ -385,15 +392,5 @@
 </ul>
          </section>
      </div>
-<script>
-(function () {
-    var header = document.querySelector('.header-text');
-    var nav = document.querySelector('nav');
-    if (!header || !nav || !('IntersectionObserver' in window)) return;
-    new IntersectionObserver(function (entries) {
-        nav.classList.toggle('show-title', !entries[0].isIntersecting);
-    }, { rootMargin: '-80px 0px 0px 0px' }).observe(header);
-})();
-</script>
 </body>
 </html>
