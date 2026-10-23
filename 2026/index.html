@@ -117,6 +117,9 @@
          #program .slot.session .chair { display: block; font-size: 0.9em; font-weight: 400; color: #4a5568; }
          #program .slot.break { color: #718096; font-style: italic; }
          #program .slot.break .time { font-weight: 600; color: #718096; }
+         #program .slot.talk, #program .slot.keynote { background-color: #ffffff; border-top: none; border-left: 4px solid #3182ce; border-radius: 6px; margin: 6px 0; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06); }
+         #program .slot.keynote { border-left-color: #2c5282; border-left-width: 6px; }
+         #program .slot.event { background-color: #f0f4ea; border-top: none; border-left: 4px solid #a3b18a; border-radius: 6px; margin: 6px 0; }
          #program .authors { font-size: 0.9em; font-weight: 400; color: #718096; }
          #program .talk-title { font-weight: 700; color: #2d3748; margin-top: 4px; }
          #program .abstract { font-size: 0.95em; margin: 6px 0 4px 0; }
@@ -315,7 +318,7 @@
          <section id="program" class="highlight">
             <h2>Program</h2>
 
-            <div class="slot"><div class="time">09:00–09:10</div><div class="what">Welcome / Opening</div></div>
+            <div class="slot event"><div class="time">09:00–09:10</div><div class="what">Welcome / Opening</div></div>
             <div class="slot keynote"><div class="time">09:10–10:00</div><div class="what"><img class="speaker-photo" src="images/valentina-presutti.png" alt="Valentina Presutti" width="225" height="225"><strong>Keynote</strong>, by <a href="https://www.istc.cnr.it/people/valentina-presutti" target="_blank" rel="noopener noreferrer">Valentina Presutti</a><div class="talk-title">A love story in patterns: Twenty years of ontology design patterns, continued with language models</div><p class="abstract"><strong>Abstract.</strong> Twenty years ago, a group of Semantic Web researchers set out to do for ontologies what the Gang of Four did for software. This talk retraces that story, from NeOn and eXtreme Design to WOP, through an analysis of 788 papers. Today language models can generate and match patterns, solving what we could not, while the bottleneck moves to trust. I argue that patterns matter more than ever, as the unit linking models, people and knowledge graphs, and outline the challenges ahead.</p></div></div>
             <div class="slot session"><div class="time">10:00–10:40</div><div class="what"><strong>Paper Session 1</strong><span class="chair">Session chair: María Poveda-Villalón</span></div></div>
             <div class="slot talk"><div class="time">10:00–10:20</div><div class="what">When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning <a href="Papers/WOP2026_CameraReady_fXXX_17.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Hamed Babaei Giglou, Sören Auer and Jennifer D'Souza</span></div></div>
@@ -332,14 +335,14 @@
             <div class="slot talk"><div class="time">14:30–14:50</div><div class="what">Modeling User Requirements for Inclusive Pedestrian Routing with the PIIRRITE Ontology <a href="Papers/WOP2026_CameraReady_fXXX_6.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Salomon van Ginneken, Nadia Yacoubi Ayadi, Stéphanie Jean-Daubias and Gilles Gesquière</span></div></div>
             <div class="slot talk"><div class="time">14:50–15:10</div><div class="what">Pattern-Guided Ontology Generation with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_14.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Samah Alkhuzaey and Terry R. Payne</span></div></div>
             <div class="slot talk"><div class="time">15:10–15:30</div><div class="what">Evaluating Ontology Quality and Timeliness with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_8.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Beyza Cinar and Maria Maleshkova</span></div></div>
-            <div class="slot"><div class="time">15:30–15:50</div><div class="what">“Knowledge Engineering Automation Challenge” results</div></div>
+            <div class="slot event"><div class="time">15:30–15:50</div><div class="what">“Knowledge Engineering Automation Challenge” results</div></div>
             <div class="slot break"><div class="time">15:50–16:20</div><div class="what">Break</div></div>
             <div class="slot session"><div class="time">16:20–17:40</div><div class="what"><strong>Paper Session 4</strong><span class="chair">Session chair: Gunjan Singh</span></div></div>
             <div class="slot talk"><div class="time">16:20–16:40</div><div class="what">An Ontology Design Pattern for Software Requirements <a href="Papers/WOP2026_CameraReady_fXXX_10.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Valentina Anita Carriero, Marco Grassi, Alessio Carenini and Irene Celino</span></div></div>
             <div class="slot talk"><div class="time">16:40–17:00</div><div class="what">MAGE-Ontology: A Domain Ontology for Ghidra Malware Analysis <a href="Papers/WOP2026_CameraReady_fXXX_4.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Emily Miller and Cogan Shimizu</span></div></div>
             <div class="slot talk"><div class="time">17:00–17:20</div><div class="what">Fit for Purpose: Selecting a Reification Method for the TIDO Ontology <a href="Papers/WOP2026_CameraReady_fXXX_15.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Ritten Roothaert, Lise Stork and María Poveda-Villalón</span></div></div>
             <div class="slot talk"><div class="time">17:20–17:40</div><div class="what">APLO: A Modular Adaptive Pedagogical Learning Orchestration Ontology for Neurosymbolic Educational Systems <a href="Papers/WOP2026_CameraReady_fXXX_7.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Chris Davis Jaldi and Cogan Shimizu</span></div></div>
-            <div class="slot"><div class="time">17:40–18:00</div><div class="what">Closing</div></div>
+            <div class="slot event"><div class="time">17:40–18:00</div><div class="what">Closing</div></div>
         </section>
 
          <section id="organization" class="highlight">
