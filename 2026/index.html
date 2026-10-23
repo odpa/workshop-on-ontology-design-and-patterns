@@ -125,14 +125,14 @@
          #program .abstract { font-size: 0.95em; margin: 6px 0 4px 0; }
          #program .speaker-photo { float: right; width: 120px; height: 120px; object-fit: cover; border-radius: 10px; margin: 0 0 8px 18px; }
 
-         /* Light blue page background with white section blocks (no outer panel) */
-         body { background-color: #e6f0fa; }
-         .container { background-color: transparent; box-shadow: none; padding: 10px 0; }
-         .bg-animation { display: none; }
-         nav a { margin: 0 14px; font-size: 0.9em; letter-spacing: 0.5px; }
-         .highlight h2 { font-size: 1.9em; margin-bottom: 16px; }
+         /* Light blue page panel with white section blocks */
+         .container { background-color: #e6f0fa; }
          .highlight { background-color: #ffffff; border-color: #d3e2f3; }
          #program { background-color: #f6f9fc; }
+
+         /* Workshop title appears in the sticky nav once the page header scrolls away */
+         .nav-title { display: none; font-weight: 700; font-size: 1.05em; margin-bottom: 8px; }
+         nav.show-title .nav-title { display: block; }
 
          /* Responsive Design - (As provided) */
          @media (max-width: 768px) {
@@ -178,6 +178,7 @@
 
      <!-- Navigation -->
      <nav>
+         <div class="nav-title">17th Workshop on Ontology Design and Patterns (WOP 2026)</div>
          <a href="#about">About</a>
          <a href="#call">Call for Papers</a>
          <a href="#submission">Submission</a>
@@ -384,5 +385,15 @@
 </ul>
          </section>
      </div>
+<script>
+(function () {
+    var header = document.querySelector('.header-text');
+    var nav = document.querySelector('nav');
+    if (!header || !nav || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (entries) {
+        nav.classList.toggle('show-title', !entries[0].isIntersecting);
+    }, { rootMargin: '-80px 0px 0px 0px' }).observe(header);
+})();
+</script>
 </body>
 </html>
