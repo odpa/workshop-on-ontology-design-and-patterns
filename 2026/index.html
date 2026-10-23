@@ -110,15 +110,18 @@
          .header-text h1 { font-size: 3.5em; margin-bottom: 10px; }
          .header-text p { font-size: 1.2em; color: #718096; }
 
-         /* Author names in the program schedule */
-          #program .authors {
-              font-size: 0.9em;
-              font-weight: 400;
-              color: #718096;
-          }
+         /* Program schedule: one aligned row per slot (time | content) */
+         #program .slot { display: grid; grid-template-columns: 120px 1fr; column-gap: 20px; padding: 9px 12px; border-top: 1px solid #e2e8f0; }
+         #program .time { font-weight: 700; color: #2d3748; white-space: nowrap; }
+         #program .slot.session { background-color: #dbe7f5; border-radius: 8px; border-top: none; margin-top: 14px; }
+         #program .slot.session .chair { display: block; font-size: 0.9em; font-weight: 400; color: #4a5568; }
+         #program .slot.break { color: #718096; font-style: italic; }
+         #program .slot.break .time { font-weight: 600; color: #718096; }
+         #program .authors { font-size: 0.9em; font-weight: 400; color: #718096; }
+         #program .talk-title { font-weight: 700; color: #2d3748; margin-top: 4px; }
+         #program .abstract { font-size: 0.95em; margin: 6px 0 4px 0; }
+         #program .speaker-photo { float: right; width: 120px; height: 120px; object-fit: cover; border-radius: 10px; margin: 0 0 8px 18px; }
 
-          /* Program / schedule headings - smaller than regular section h3s */
-         #program h3 { font-size: 1.15em; margin-bottom: 10px; }
          /* Responsive Design - (As provided) */
          @media (max-width: 768px) {
              .container { width: 95%; padding: 30px; margin: 30px auto; }
@@ -126,7 +129,8 @@
              h1 { font-size: 2.5em; }
              h2 { font-size: 2em; }
              h3 { font-size: 1.6em; }
-             #program h3 { font-size: 1.05em; }
+             #program .slot { grid-template-columns: 1fr; row-gap: 2px; }
+             #program .speaker-photo { width: 90px; height: 90px; }
              .header-text h1 { font-size: 2.8em; }
              .header-text p { font-size: 1em; }
          }
@@ -311,48 +315,31 @@
          <section id="program" class="highlight">
             <h2>Program</h2>
 
-            <h3><span style="font-weight:600;">09:00–09:10</span> — Welcome / Opening</h3>
-
-            <h3><span style="font-weight:600;">09:10–10:00</span> — Keynote <em>(details to be added)</em></h3>
-
-            <ul>
-                <li><strong>10:00–10:20</strong> — Modeling User Requirements for Inclusive Pedestrian Routing with the PIIRRITE Ontology <a href="Papers/WOP2026_CameraReady_fXXX_6.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Salomon van Ginneken, Nadia Yacoubi Ayadi, Stéphanie Jean-Daubias and Gilles Gesquière</span></li>
-                <li><strong>10:20–10:40</strong> — PEO: An Ontology to Scaffold Prompt Engineering for Foundation Models <a href="Papers/WOP2026_CameraReady_fXXX_5.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Roberto Barile, Simone Gramegna, Andrea Giovanni Nuzzolese, Donato Francioso and Claudia d'Amato</span></li>
-            </ul>
-
-            <h3><span style="font-weight:600;">10:40–11:10</span> — Break</h3>
-
-            <h3><span style="font-weight:600;">11:10–12:30</span> — Paper Session 2</h3>
-            <ul>
-                <li><strong>11:10–11:30</strong> — Formalizing Data Structures Without Overdoing It: an Ontology for Dependency, Composition, and Value-Space Structure of Variables and Datasets <a href="Papers/WOP2026_CameraReady_fXXX_9.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Miguel Ceriani and Andrea Nuzzolese</span></li>
-                <li><strong>11:30–11:50</strong> — ArCo4Archives: A Pattern-based Ontology for Archives <a href="Papers/WOP2026_CameraReady_fXXX_3.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Stella Di Fazio, Maria Chiara Frangipane, Giorgia Lodi, Cecilia Perrone and Chiara Veninata</span></li>
-                <li><strong>11:50–12:10</strong> — WISDOM: A Wearable Integrated Stress Data Ontology Model <a href="Papers/WOP2026_CameraReady_fXXX_11.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Lennart Mackert, Paul Schreiber, Simon Burbach and Maria Maleshkova</span></li>
-                <li><strong>12:10–12:30</strong> — LCAnet: A Modular Ontology Network for Life Cycle Assessment Knowledge Modeling <a href="Papers/WOP2026_CameraReady_fXXX_1.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Fatima Danash and Chokri Mraidha</span></li>
-            </ul>
-
-            <h3><span style="font-weight:600;">12:50–14:10</span> — Break / Lunch</h3>
-
-            <h3><span style="font-weight:600;">14:10–15:50</span> — Paper Session 3</h3>
-            <ul>
-                <li><strong>14:10–14:30</strong> — Evaluating LLMs for Automatic Correction and Detection of Ontology Pitfalls <a href="Papers/WOP2026_CameraReady_fXXX_2.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Davide Di Pierro, Danaï Symeonidou and Lylia Abrouk</span></li>
-                <li><strong>14:30–14:50</strong> — When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning <a href="Papers/WOP2026_CameraReady_fXXX_17.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Hamed Babaei Giglou, Sören Auer and Jennifer D'Souza</span></li>
-                <li><strong>14:50–15:10</strong> — Pattern-Guided Ontology Generation with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_14.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Samah Alkhuzaey and Terry R. Payne</span></li>
-                <li><strong>15:10–15:30</strong> — Evaluating Ontology Quality and Timeliness with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_8.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Beyza Cinar and Maria Maleshkova</span></li>
-            </ul>
-
-            <h3><span style="font-weight:600;">15:30–15:50</span> — "Knowledge Engineering Automation Challenge" results</h3>
-
-            <h3><span style="font-weight:600;">15:50–16:20</span> — Break</h3>
-
-            <h3><span style="font-weight:600;">16:20–17:40</span> — Paper Session 4</h3>
-            <ul>
-                <li><strong>16:20–16:40</strong> — An Ontology Design Pattern for Software Requirements <a href="Papers/WOP2026_CameraReady_fXXX_10.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Valentina Anita Carriero, Marco Grassi, Alessio Carenini and Irene Celino</span></li>
-                <li><strong>16:40–17:00</strong> — MAGE-Ontology: A Domain Ontology for Ghidra Malware Analysis <a href="Papers/WOP2026_CameraReady_fXXX_4.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Emily Miller and Cogan Shimizu</span></li>
-                <li><strong>17:00–17:20</strong> — Fit for Purpose: Selecting a Reification Method for the TIDO Ontology <a href="Papers/WOP2026_CameraReady_fXXX_15.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Ritten Roothaert, Lise Stork and María Poveda-Villalón</span></li>
-                <li><strong>17:20–17:40</strong> — APLO: A Modular Adaptive Pedagogical Learning Orchestration Ontology for Neurosymbolic Educational Systems <a href="Papers/WOP2026_CameraReady_fXXX_7.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Chris Davis Jaldi and Cogan Shimizu</span></li>
-            </ul>
-
-            <h3><span style="font-weight:600;">17:40–18:00</span> — Closing</h3>
+            <div class="slot"><div class="time">09:00–09:10</div><div class="what">Welcome / Opening</div></div>
+            <div class="slot keynote"><div class="time">09:10–10:00</div><div class="what"><img class="speaker-photo" src="images/valentina-presutti.png" alt="Valentina Presutti" width="225" height="225"><strong>Keynote</strong>, by <a href="https://www.istc.cnr.it/people/valentina-presutti" target="_blank" rel="noopener noreferrer">Valentina Presutti</a><div class="talk-title">A love story in patterns: Twenty years of ontology design patterns, continued with language models</div><p class="abstract"><strong>Abstract.</strong> Twenty years ago, a group of Semantic Web researchers set out to do for ontologies what the Gang of Four did for software. This talk retraces that story, from NeOn and eXtreme Design to WOP, through an analysis of 788 papers. Today language models can generate and match patterns, solving what we could not, while the bottleneck moves to trust. I argue that patterns matter more than ever, as the unit linking models, people and knowledge graphs, and outline the challenges ahead.</p></div></div>
+            <div class="slot session"><div class="time">10:00–10:40</div><div class="what"><strong>Paper Session 1</strong><span class="chair">Session chair: María Poveda-Villalón</span></div></div>
+            <div class="slot talk"><div class="time">10:00–10:20</div><div class="what">Modeling User Requirements for Inclusive Pedestrian Routing with the PIIRRITE Ontology <a href="Papers/WOP2026_CameraReady_fXXX_6.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Salomon van Ginneken, Nadia Yacoubi Ayadi, Stéphanie Jean-Daubias and Gilles Gesquière</span></div></div>
+            <div class="slot talk"><div class="time">10:20–10:40</div><div class="what">PEO: An Ontology to Scaffold Prompt Engineering for Foundation Models <a href="Papers/WOP2026_CameraReady_fXXX_5.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Roberto Barile, Simone Gramegna, Andrea Giovanni Nuzzolese, Donato Francioso and Claudia d'Amato</span></div></div>
+            <div class="slot break"><div class="time">10:40–11:10</div><div class="what">Break</div></div>
+            <div class="slot session"><div class="time">11:10–12:30</div><div class="what"><strong>Paper Session 2</strong><span class="chair">Session chair: María Poveda-Villalón</span></div></div>
+            <div class="slot talk"><div class="time">11:10–11:30</div><div class="what">Formalizing Data Structures Without Overdoing It: an Ontology for Dependency, Composition, and Value-Space Structure of Variables and Datasets <a href="Papers/WOP2026_CameraReady_fXXX_9.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Miguel Ceriani and Andrea Nuzzolese</span></div></div>
+            <div class="slot talk"><div class="time">11:30–11:50</div><div class="what">ArCo4Archives: A Pattern-based Ontology for Archives <a href="Papers/WOP2026_CameraReady_fXXX_3.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Stella Di Fazio, Maria Chiara Frangipane, Giorgia Lodi, Cecilia Perrone and Chiara Veninata</span></div></div>
+            <div class="slot talk"><div class="time">11:50–12:10</div><div class="what">WISDOM: A Wearable Integrated Stress Data Ontology Model <a href="Papers/WOP2026_CameraReady_fXXX_11.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Lennart Mackert, Paul Schreiber, Simon Burbach and Maria Maleshkova</span></div></div>
+            <div class="slot talk"><div class="time">12:10–12:30</div><div class="what">LCAnet: A Modular Ontology Network for Life Cycle Assessment Knowledge Modeling <a href="Papers/WOP2026_CameraReady_fXXX_1.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Fatima Danash and Chokri Mraidha</span></div></div>
+            <div class="slot break"><div class="time">12:50–14:10</div><div class="what">Break / Lunch</div></div>
+            <div class="slot session"><div class="time">14:10–15:30</div><div class="what"><strong>Paper Session 3</strong><span class="chair">Session chair: Raghava Mutharaju</span></div></div>
+            <div class="slot talk"><div class="time">14:10–14:30</div><div class="what">Evaluating LLMs for Automatic Correction and Detection of Ontology Pitfalls <a href="Papers/WOP2026_CameraReady_fXXX_2.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Davide Di Pierro, Danaï Symeonidou and Lylia Abrouk</span></div></div>
+            <div class="slot talk"><div class="time">14:30–14:50</div><div class="what">When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning <a href="Papers/WOP2026_CameraReady_fXXX_17.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Hamed Babaei Giglou, Sören Auer and Jennifer D'Souza</span></div></div>
+            <div class="slot talk"><div class="time">14:50–15:10</div><div class="what">Pattern-Guided Ontology Generation with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_14.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Samah Alkhuzaey and Terry R. Payne</span></div></div>
+            <div class="slot talk"><div class="time">15:10–15:30</div><div class="what">Evaluating Ontology Quality and Timeliness with Large Language Models <a href="Papers/WOP2026_CameraReady_fXXX_8.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Beyza Cinar and Maria Maleshkova</span></div></div>
+            <div class="slot"><div class="time">15:30–15:50</div><div class="what">“Knowledge Engineering Automation Challenge” results</div></div>
+            <div class="slot break"><div class="time">15:50–16:20</div><div class="what">Break</div></div>
+            <div class="slot session"><div class="time">16:20–17:40</div><div class="what"><strong>Paper Session 4</strong><span class="chair">Session chair: Gunjan Singh</span></div></div>
+            <div class="slot talk"><div class="time">16:20–16:40</div><div class="what">An Ontology Design Pattern for Software Requirements <a href="Papers/WOP2026_CameraReady_fXXX_10.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Valentina Anita Carriero, Marco Grassi, Alessio Carenini and Irene Celino</span></div></div>
+            <div class="slot talk"><div class="time">16:40–17:00</div><div class="what">MAGE-Ontology: A Domain Ontology for Ghidra Malware Analysis <a href="Papers/WOP2026_CameraReady_fXXX_4.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Emily Miller and Cogan Shimizu</span></div></div>
+            <div class="slot talk"><div class="time">17:00–17:20</div><div class="what">Fit for Purpose: Selecting a Reification Method for the TIDO Ontology <a href="Papers/WOP2026_CameraReady_fXXX_15.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Ritten Roothaert, Lise Stork and María Poveda-Villalón</span></div></div>
+            <div class="slot talk"><div class="time">17:20–17:40</div><div class="what">APLO: A Modular Adaptive Pedagogical Learning Orchestration Ontology for Neurosymbolic Educational Systems <a href="Papers/WOP2026_CameraReady_fXXX_7.pdf" target="_blank" rel="noopener noreferrer">[paper]</a><br><span class="authors">Chris Davis Jaldi and Cogan Shimizu</span></div></div>
+            <div class="slot"><div class="time">17:40–18:00</div><div class="what">Closing</div></div>
         </section>
 
          <section id="organization" class="highlight">
